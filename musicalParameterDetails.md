@@ -1,3 +1,11 @@
+<script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+$$
+\text{Tessitura} = \frac{\sum_{i=1}^{n} \text{Registration}_{i}}{n}
+$$
+
 # Comprehensive Musical Parameters
 
 This document provides detailed descriptions, derivations, and significance for all **37 musical parameters**. Each parameter is classified as **Primary** (directly measurable) or **Secondary** (derived from Primary or other Secondary parameters). 
