@@ -1,307 +1,206 @@
-
-$$
-\text{Tessitura} = \frac{\sum_{i=1}^{n} \text{Registration}_{i}}{n}
-$$
-
 # Comprehensive Musical Parameters
+## **Notation**
 
-This document provides detailed descriptions, derivations, and significance for all **37 musical parameters**. Each parameter is classified as **Primary** (directly measurable) or **Secondary** (derived from Primary or other Secondary parameters). 
+We adopt the following symbols for musical parameters, derived from musical set theory and harmonic analysis:
+
+- $p$: **Pitch**, represented as a numeric value where each octave increment is 12 (e.g., $p = 0, 1, \dots, 11$ for one octave).
+- $pc$: **Pitch class**, derived by modulo operation to strip octave information, $pc \equiv p \pmod{12}$.
+- $r$: **Registration**, representing the octave of a pitch, $r = \lfloor p / 12 \rfloor$.
+- $f(p)$: **Frequency** of a pitch $p$ in Hz, based on the formula $f(p) = 440 \times 2^{(p - 69)/12}$ (Assumes A440 tuning, where $p = 69$ corresponds to 440 Hz).
+- $h$: **Fundamental frequency**, representing the base frequency of a harmonic series.
+- $n$: **Harmonic partial number**, where $n = 1$ is the first harmonic or first partial, $n = 2$ is the second harmonic or partial (an octave above the fundamental), and so on.
+- $f_n$: **Frequency** of the $n$-th harmonic partial, calculated as $f_n = n \times f(h)$.
+- $r_{p_1, p_2}$: **Frequency ratio** between pitches $p_1$ and $p_2$, calculated as $r_{p_1, p_2} = \frac{f(p_1)}{f(p_2)}$.
 
 ---
 
 ## **1. Pitch Class**
 
 **Definition:**  
-The pitch identity of a note without octave information, encoded as integers (C=0, C#=1, ..., B=11).
+The *Pitch Class* ($pc$) represents the pitch identity of a note without octave information, encoded as integers from $0$ to $11$. Each pitch class corresponds to one of the 12 semitones in an octave:
+- $0 = C$, $1 = C\sharp/D\flat$, $2 = D$, $\dots$, $11 = B$.
 
-**Primary/Secondary:**  
-**Primary.**
+**Formula:**  
+The pitch class is derived using the modulo operation:
 
-**Derivation:**  
-Measured directly from the tonal identity of a note, ignoring registration.
+$$
+pc \equiv p \pmod{12}
+$$
+
+**Explanation:**  
+- The modulo operation removes octave information, leaving only the pitch within a single octave.
+- For example:
+  - If $p = 60$ ($C\sharp$), $pc = 60 \pmod{12} = 0$ ($C$).
+  - If $p = 61$ ($C\sharp4$), $pc = 61 \pmod{12} = 1$ ($C\sharp$).
+  - If $p = 73$ ($C\sharp5$), $pc = 73 \pmod{12} = 1$ ($C\sharp$).
 
 **Musical Context:**  
-Pitch class is foundational for tonal and harmonic analysis. It captures the core identity of a note, enabling the study of scales, chords, and melodic patterns independent of octave.
-
-**Relative Importance:**  
-**High.** Central to melody, harmony, and key analysis.
+The concept of pitch class allows for the human perception that a pitch and its octave equivalents share a fundamental commonality. This abstraction simplifies music theory by focusing on pitch identity without considering octave placement. It is central to:
+- Analyzing scales and modes.
+- Identifying chord qualities and relationships.
+- Grouping notes with equivalent pitch identities (e.g., enharmonic equivalents like G$\sharp$ and A$\flat$).
 
 ---
 
 ## **2. Registration**
 
 **Definition:**  
-The octave placement of a pitch, expressed as an integer (e.g., C4 = 4).
+The *Registration* ($r$) represents the octave placement of a pitch, expressed as an integer. It specifies the vertical position of a pitch on the keyboard or within a musical range.
 
-**Primary/Secondary:**  
-**Primary.**
+**Formula:**  
+The registration is calculated by dividing the pitch value ($p$) by 12 and taking the floor of the result:
 
-**Derivation:**  
-Measured directly from the note’s position in a score or its MIDI value.
+$$
+r = \lfloor p / 12 \rfloor
+$$
+
+**Explanation:**  
+- Each octave spans 12 semitones. Dividing the pitch value by 12 determines its octave, while the floor operation removes any fractional part.
+- For example:
+  - $p = 60$ (C4): $r = \lfloor 60 / 12 \rfloor = 5$ (5th octave).
+  - $p = 72$ (C5): $r = \lfloor 72 / 12 \rfloor = 6$ (6th octave).
+  - $p = 59$ (B3): $r = \lfloor 59 / 12 \rfloor = 4$ (4th octave).
 
 **Musical Context:**  
-Registration differentiates between pitches of the same class but in different octaves. It influences voice leading, texture, and emotional impact.
+Registration provides a way to distinguish between pitches of the same pitch class across different octaves. While pitch class captures the tonal identity, registration determines the pitch’s height, influencing:
+- **Timbre:** High notes often sound brighter, while low notes sound darker.
+- **Range:** Helps analyze a melody's tessitura (average pitch level) and range.
+- **Orchestration:** Determines how instruments with overlapping ranges can interact.
+- **Perception of Octave Equivalence:** Registration complements pitch class by showing how octave-related pitches differ in vertical space.
 
-**Relative Importance:**  
-**High.** Essential for distinguishing between similar pitch classes in different registers.
-
----
 
 ## **3. Intervallic Movement**
 
 **Definition:**  
-Sequential pitch differences in semitones, incorporating time ordering and registration shifts.
+The *Intervallic Movement* measures the pitch difference in semitones between consecutive notes in a sequence. It represents the melodic or harmonic step size and direction.
 
-**Primary/Secondary:**  
-**Secondary.**
+**Formula:**  
+The interval between two consecutive pitches is calculated as:
 
-**Derived From:**  
-- **1. Pitch Class** (Primary)  
-- **2. Registration** (Primary)
+$$
+\text{Interval} = p_{i} - p_{i-1}
+$$
 
-**Derivation:**  
-Calculated as:
-\[
-\text{Interval} = \text{Pitch}_{n} - \text{Pitch}_{n-1}
-\]
-where pitch includes both pitch class and registration.
+**Explanation:**  
+- $p_{i}$ is the pitch of the current note, and $p_{i-1}$ is the pitch of the previous note.
+- The result is a signed value:
+  - Positive intervals indicate ascending motion.
+  - Negative intervals indicate descending motion.
+  - Zero indicates no motion (repeated pitch).
+
+**Examples:**
+- If $p_{i} = 64$ (E4) and $p_{i-1} = 60$ (C4):  
+  $$\text{Interval} = 64 - 60 = 4$$ (a major third ascending).
+- If $p_{i} = 55$ (G3) and $p_{i-1} = 59$ (B3):  
+  $$\text{Interval} = 55 - 59 = -4$$ (a major third descending).
 
 **Musical Context:**  
-Reflects the contour and progression of a melody. Small intervals suggest lyrical smoothness, while large leaps convey drama or excitement.
-
-**Relative Importance:**  
-**High.** Crucial for melodic expressiveness and contour.
-
----
+Intervallic movement captures melodic and harmonic relationships. It is essential for contextualizing pitch information in relationship to other note events in time:
+- **Melodic Shape:** Defines the contour of a melody.
+- **Harmonic Analysis:** Helps identify chord progressions and voice leading.
+- **Emotional Expression:** Large intervals often create drama or tension, while small intervals suggest smoothness or calm.
+- **Perceptual Dynamics:** Ascending intervals often feel uplifting, while descending intervals feel resolving or grounding.
 
 ## **4. Range**
 
 **Definition:**  
-The span between the highest and lowest pitches in a section or piece.
+The *Range* represents the span between the highest and lowest pitches in a musical section or phrase. It quantifies the vertical extent of the pitch content.
 
-**Primary/Secondary:**  
-**Secondary.**
+**Formula:**  
+The range is calculated as:
 
-**Derived From:**  
-- **2. Registration** (Primary)
+$$
+\text{Range} = \text{Max}(p) - \text{Min}(p)
+$$
 
-**Derivation:**  
-Difference between the maximum and minimum registration values:
-\[
-\text{Range} = \text{Max(Registration)} - \text{Min(Registration)}
-\]
+**Explanation:**  
+- $\text{Max}(p)$ is the highest pitch in the section.
+- $\text{Min}(p)$ is the lowest pitch in the section.
+- The difference between these values gives the range in semitones.
+
+**Examples:**
+- If the pitches in a melody are $\{60, 62, 64, 67, 69\}$:
+  - $\text{Max}(p) = 69$ (A4), $\text{Min}(p) = 60$ (C4).
+  - $\text{Range} = 69 - 60 = 9$ semitones.
+- For a more extended melody with $\{48, 52, 60, 64, 72\}$:
+  - $\text{Max}(p) = 72$ (C5), $\text{Min}(p) = 48$ (C3).
+  - $\text{Range} = 72 - 48 = 24$ semitones (two octaves).
 
 **Musical Context:**  
-Defines the breadth of a melodic or harmonic structure. Wider ranges often signal emotional intensity or virtuosity.
-
-**Relative Importance:**  
-**Moderate.** Influences the scope and drama of a passage but is less detailed than intervallic movement.
-
----
+Range defines the breadth of pitch content in a piece or section, influencing:
+- **Expressive Scope:** Wider ranges often convey drama or grandeur, while narrow ranges can feel intimate or constrained.
+- **Instrumental Writing:** Determines which instruments or voices can perform the material.
+- **Tessitura and Texture:** High ranges are typically brighter, while low ranges are darker, shaping the overall character of the music.
 
 ## **5. Tessitura**
 
 **Definition:**  
-The average pitch position within the range of a phrase or section.
+The *Tessitura* represents the central range of pitches where the majority of notes in a musical passage are concentrated. Unlike the overall range, it excludes extreme outliers and focuses on the "comfortable zone" of activity.
 
-**Primary/Secondary:**  
-**Secondary.**
+**Formula:**  
+To calculate tessitura:
+1. Determine the total number of notes in the passage, $n$.
+2. Identify the subset of notes that accounts for at least half ($\geq n / 2$) of all pitches.
+3. Define the lowest ($\text{Min}(p_{\text{tessitura}})$ and highest ($\text{Max}(p_{\text{tessitura}})$ pitches in this subset.
 
-**Derived From:**  
-- **2. Registration** (Primary)
+$$
+\text{Tessitura} = \text{Min}(p_{\text{tessitura}}), \text{Max}(p_{\text{tessitura}})
+$$
 
-**Derivation:**  
-Calculated as:
-\[
-\text{Tessitura} = \frac{\sum_{i=1}^{n} \text{Registration}_{i}}{n}
-\]
+**Explanation:**  
+- The tessitura is a range rather than a single value, defined by the bounds within which more than half of all notes occur.
+- Excludes rare extreme pitches that fall outside the central activity zone.
+
+**Examples:**
+- For the pitches $\{60, 62, 64, 64, 67, 69, 72\}$:
+  - Total notes: $n = 7$.
+  - Half of $n$: $7 / 2 = 3.5$ (round up to 4).
+  - Majority subset: $\{62, 64, 64, 67\}$ (middle group of pitches).
+  - Tessitura: $[\text{Min}(p_{\text{tessitura}}), \text{Max}(p_{\text{tessitura}})] = [62, 67]$ (D4 to G4).
+- For a wider set $\{48, 52, 55, 60, 64, 64, 64, 67, 72\}$:
+  - Total notes: $n = 9$.
+  - Half of $n$: $9 / 2 = 4.5$ (round up to 5).
+  - Majority subset: $\{60, 64, 64, 64, 67\}$.
+  - Tessitura: $[60, 67]$ (C4 to G4).
 
 **Musical Context:**  
-Indicates where most of the notes lie within a performer’s range. High tessitura conveys brightness or tension, while low tessitura suggests warmth or solemnity.
+Tessitura describes the "active range" of a part:
+- **Vocal Writing:** Indicates the comfortable singing range, essential for evaluating vocal difficulty and strain.
+- **Instrumental Music:** Identifies where the bulk of pitches lie in orchestration, influencing tone and texture.
+- **Expressive Quality:** A high tessitura conveys intensity and tension, while a low tessitura feels grounded and relaxed.
 
-**Relative Importance:**  
-**Moderate.** Relevant for performance analysis and expressiveness.
-
----
-
-## **6. Contour Complexity**
+## **6. Harmonic Partial Frequency**
 
 **Definition:**  
-A measure of directional changes in a melodic line.
+The *Harmonic Partial Frequency* ($f_n$) represents the relationship of a pitch to a reference fundamental frequency ($f(h)$), expressed as a ratio. It is defined as the $n$-th harmonic partial, where $n$ is the multiplier of the fundamental.
 
-**Primary/Secondary:**  
-**Secondary.**
+**Formula:**  
 
-**Derived From:**  
-- **3. Intervallic Movement** (Secondary)
+$$
+\text{Harmonic Partial Ratio} = \frac{f(p)}{f(h)}
+$$
 
-**Derivation:**  
-Count the number of inflection points (changes in direction from ascending to descending or vice versa) and normalize by the total number of notes:
-\[
-\text{Complexity} = \frac{\text{Inflection Points}}{\text{Total Notes}}
-\]
+**Explanation:**  
+- $f(h)$ is the reference fundamental frequency.
+- $f(p)$ is the frequency of the pitch being analyzed.
+- The ratio determines which harmonic partial ($n$) the pitch corresponds to:
+  - $n = 1$: The pitch is the fundamental ($f(p) = f(h)$).
+  - $n = 2$: The pitch is the second harmonic (an octave above the fundamental).
+  - $n = 3$: The pitch is the third harmonic (a fifth above the second harmonic), and so on.
+
+**Examples (using ratios):**
+- For a fundamental $f(h) = 130.81 \, \text{Hz}$ (C3):
+  - A pitch at $f(p) = 130.81 \, \text{Hz}$ has a ratio of $n = \frac{130.81}{130.81} = 1$ (first harmonic, C3).
+  - A pitch at $f(p) = 261.63 \, \text{Hz}$ has a ratio of $n = \frac{261.63}{130.81} = 2$ (second harmonic, C4).
+  - A pitch at $f(p) = 392.43 \, \text{Hz}$ has a ratio of $n = \frac{392.43}{130.81} = 3$ (third harmonic, G4).
 
 **Musical Context:**  
-Captures the shape and complexity of a melody. Simple contours suggest clarity, while complex contours indicate expressiveness or intricacy.
-
-**Relative Importance:**  
-**Moderate.** Secondary to intervallic movement.
+Expressing harmonic relationships as ratios:
+- **Harmonic Relationships:** Ratios simplify calculations for harmonic structures, avoiding reliance on absolute frequencies.
+- **Timbre Analysis:** Harmonic partial ratios highlight the strength and distribution of harmonics that define an instrument's timbre.
+- **Musical Intervals:** Directly connect ratios to intervallic relationships (e.g., $n = 2$ is an octave, $n = 3$ is a fifth above).
 
 ---
 
-## **7. Ornamentation Density**
-
-**Definition:**  
-The frequency of ornamental notes (e.g., trills, grace notes) in a measure or section.
-
-**Primary/Secondary:**  
-**Primary.**
-
-**Derivation:**  
-Count the number of ornaments per unit of time.
-
-**Musical Context:**  
-Ornamentation enriches expressiveness and style. Its density varies by genre and era (e.g., Baroque music is highly ornamented).
-
-**Relative Importance:**  
-**Low to Moderate.** Specific to certain styles or periods.
-
----
-
-## **8. Chord Interval Structure**
-
-**Definition:**  
-The intervals (in semitones) between a chord’s root and its other notes, expressed as a stack.
-
-**Primary/Secondary:**  
-**Primary.**
-
-**Derivation:**  
-Measured directly by comparing each chord tone to the root.
-
-**Musical Context:**  
-Defines the chord’s quality (e.g., major, minor, augmented). Essential for harmonic analysis.
-
-**Relative Importance:**  
-**High.** Foundational for understanding harmonic relationships.
-
----
-
-## **9. Fuzzy Chord Classification**
-
-**Definition:**  
-Probabilistic assignment of a chord to categories (e.g., major, minor) based on interval structure and context.
-
-**Primary/Secondary:**  
-**Secondary.**
-
-**Derived From:**  
-- **8. Chord Interval Structure** (Primary)
-
-**Derivation:**  
-Apply fuzzy logic to chord intervals to assign likelihoods to different chord types.
-
-**Musical Context:**  
-Useful for resolving ambiguities in complex or extended harmonies.
-
-**Relative Importance:**  
-**High.** Particularly relevant in jazz, modern, and atonal music.
-
----
-
-## **10. Chord Inversion**
-
-**Definition:**  
-The chord member (e.g., root, third, fifth) appearing in the bass.
-
-**Primary/Secondary:**  
-**Secondary.**
-
-**Derived From:**  
-- **8. Chord Interval Structure** (Primary)  
-- **11. Bass Note** (Primary)
-
-**Derivation:**  
-Determine the interval between the bass note and the chord root to classify the inversion.
-
-**Musical Context:**  
-Inversions affect harmonic function and voice leading.
-
-**Relative Importance:**  
-**High.** Essential for harmonic and tonal analysis.
-
----
-
-## **11. Bass Note**
-
-**Definition:**  
-The lowest pitch in a chord or passage.
-
-**Primary/Secondary:**  
-**Primary.**
-
-**Derivation:**  
-Measured directly from the lowest pitch present.
-
-**Musical Context:**  
-Anchors harmonic and tonal structures.
-
-**Relative Importance:**  
-**High.** Key to understanding harmonic grounding.
-
----
-
-## **12. Chord Distance**
-
-**Definition:**  
-The intervallic similarity or functional relationship between two chords, represented as a numerical score.
-
-**Primary/Secondary:**  
-**Secondary.**
-
-**Derived From:**  
-- **8. Chord Interval Structure** (Primary)
-
-**Derivation:**  
-1. Align the interval stacks of two chords.  
-2. Compute the weighted difference between intervals:
-   \[
-   D(C_1, C_2) = \sum_{k=1}^{\max(m, n)} w_k \cdot |i_k - j_k|
-   \]
-3. Normalize the distance score.
-
-**Musical Context:**  
-Highlights functional progressions or chromatic shifts.
-
-**Relative Importance:**  
-**High.** Essential for harmonic progressions.
-
----
-
-## **13. Implied Harmonic Root**
-
-**Definition:**  
-The lowest fundamental pitch inferred from simultaneous pitches based on harmonic series.
-
-**Primary/Secondary:**  
-**Secondary.**
-
-**Derived From:**  
-- **1. Pitch Class** (Primary)  
-- **2. Registration** (Primary)
-
-**Derivation:**  
-Identify the root aligning with the lowest harmonic numbers:
-\[
-R_{\text{implied}} = \arg\min_R \frac{1}{k} \sum_{j=1}^{k} n_{jR}
-\]
-
-**Musical Context:**  
-Determines harmonic stability and tonal grounding.
-
-**Relative Importance:**  
-**High.** Central to tonal analysis.
-
----
-
-The remaining parameters will follow this format. Let me know if you'd like all 37 completed!  
+### Next Steps
+If this revised definition fits your vision, I’ll move on to the next parameter, **Frequency Ratio Between Notes**. Let me know! 
