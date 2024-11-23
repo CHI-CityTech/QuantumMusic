@@ -1,3 +1,6 @@
+
+
+
 # Comprehensive Musical Parameters
 ## **Notation**
 We adopt the following symbols for musical parameters, derived from musical set theory, harmonic analysis, and time-based analysis:
@@ -93,19 +96,21 @@ Registration provides a way to distinguish between pitches of the same pitch cla
 - **Perception of Octave Equivalence:** Registration complements pitch class by showing how octave-related pitches differ in vertical space.
 
 
-## **3. Intervallic Movement** (Secondary)
+## **3. Intervallic Movement**
 
+**Type:** Secondary  
 **Derived From:**  
 - Primary Parameters: Pitch ($p$), Time ($t$).
+- Aggregate, ordered series of pitches based on their time stamp ($t$)
 
 **Definition:**  
-The *Intervallic Movement* describes the pitch changes between consecutive note events in a sequence, based on their timestamps. It encompasses both the direction and magnitude of these changes, making it applicable to single melodic lines (commonly referred to as "Melody") and to aggregate relationships across polyphonic or multi-instrumental contexts.
+The *Intervallic Movement* describes the pitch changes between consecutive note events in a sequence, based on their timestamps. It encompasses both the direction and magnitude of these changes, making it applicable to single melodic lines (commonly referred to as "Melodic Contour") and to aggregate relationships across polyphonic or multi-instrumental contexts.
 
 **Formula:**  
 Intervallic Movement is calculated as the difference between the pitches of consecutive note events, ordered by their timestamps:
 
 $$
-\text{Intervallic Movement}_{i} = p_{i} - p_{i-1}, \quad \text{where } t_{i} > t_{i-1}
+\text{Intervallic Movement}\_{i} = p_{i} - p_{i-1}, \quad \text{where } t_{i} > t_{i-1}
 $$
 
 **Explanation:**  
@@ -131,154 +136,187 @@ $$
 
 **Musical Context:**  
 Intervallic Movement is foundational to musical analysis:
-- **Melodic Analysis:** For single-line melodies, it defines the contour and structure.
+- **Melodic Analysis:** For single-line melodies, it defines the contour and structure (commonly called "Melodic Contour").
 - **Harmonic and Polyphonic Analysis:** Describes relationships between voices or instrument lines, capturing aggregate interval changes over time.
 - **Expressive Qualities:** Large intervals may suggest drama or intensity, while small intervals contribute to smoothness or stability.
 - **Computational Applications:** Serves as a flexible parameter for analyzing and classifying melodies, harmonies, or polyphonic textures.
 
----
+## **4. Pitch Range**
 
-### **Next Steps**
-
-Let me know if this revision aligns with your expectations. If it’s ready to go, I’ll move on to the next parameter. 
-
-
-
-
-
-
-
-
-## **3. Intervallic Movement**
+**Type:** Secondary  
+**Derived From:**  
+- Aggregate: Time-independent collection of all pitches in the analyzed passage.
 
 **Definition:**  
-The *Intervallic Movement* measures the pitch difference in semitones between consecutive notes in a sequence. It represents the melodic or harmonic step size and direction.
+The *Pitch Range* is the interval spanned by the lowest and highest pitch values in a given passage. It provides a measure of the overall tonal span of the music.
 
 **Formula:**  
-The interval between two consecutive pitches is calculated as:
+The **Pitch Range** is calculated as:
 
 $$
-\text{Interval} = p_{i} - p_{i-1}
+\text{Pitch Range} = p_{\text{max}} - p_{\text{min}}
 $$
+
+Where:
+- $p_{\text{max}}$: The highest pitch in the passage.
+- $p_{\text{min}}$: The lowest pitch in the passage.
 
 **Explanation:**  
-- $p_{i}$ is the pitch of the current note, and $p_{i-1}$ is the pitch of the previous note.
-- The result is a signed value:
-  - Positive intervals indicate ascending motion.
-  - Negative intervals indicate descending motion.
-  - Zero indicates no motion (repeated pitch).
+- **Time Independence:** Unlike parameters dependent on temporal order (e.g., Intervallic Movement), Pitch Range considers only the absolute extreme values, ignoring frequency of occurrence or distribution.
+- **Extremes Matter:** It highlights the outer boundaries of the pitch content, which may or may not align with the central range of activity (Tessitura).
 
 **Examples:**
-- If $p_{i} = 64$ (E4) and $p_{i-1} = 60$ (C4):  
-  $$\text{Interval} = 64 - 60 = 4$$ (a major third ascending).
-- If $p_{i} = 55$ (G3) and $p_{i-1} = 59$ (B3):  
-  $$\text{Interval} = 55 - 59 = -4$$ (a major third descending).
+1. For the pitch sequence $\{60, 62, 64, 64, 67, 72\}$:
+   - $p_{\text{max}} = 72$, $p_{\text{min}} = 60$.
+   - $\text{Pitch Range: } 72 - 60 = 12$ semitones (1 octave).
+2. For the pitch sequence $\{50, 55, 55, 60, 62, 62, 62\}$:
+   - $p_{\text{max}} = 62$, $p_{\text{min}} = 50$.
+   - $\text{Pitch Range: } 62 - 50 = 12$ semitones (1 octave).
 
 **Musical Context:**  
-Intervallic movement captures melodic and harmonic relationships. It is essential for contextualizing pitch information in relationship to other note events in time:
-- **Melodic Shape:** Defines the contour of a melody.
-- **Harmonic Analysis:** Helps identify chord progressions and voice leading.
-- **Emotional Expression:** Large intervals often create drama or tension, while small intervals suggest smoothness or calm.
-- **Perceptual Dynamics:** Ascending intervals often feel uplifting, while descending intervals feel resolving or grounding.
-
-## **4. Range**
-
-**Definition:**  
-The *Range* represents the span between the highest and lowest pitches in a musical section or phrase. It quantifies the vertical extent of the pitch content.
-
-**Formula:**  
-The range is calculated as:
-
-$$
-\text{Range} = \text{Max}(p) - \text{Min}(p)
-$$
-
-**Explanation:**  
-- $\text{Max}(p)$ is the highest pitch in the section.
-- $\text{Min}(p)$ is the lowest pitch in the section.
-- The difference between these values gives the range in semitones.
-
-**Examples:**
-- If the pitches in a melody are $\{60, 62, 64, 67, 69\}$:
-  - $\text{Max}(p) = 69$ (A4), $\text{Min}(p) = 60$ (C4).
-  - $\text{Range} = 69 - 60 = 9$ semitones.
-- For a more extended melody with $\{48, 52, 60, 64, 72\}$:
-  - $\text{Max}(p) = 72$ (C5), $\text{Min}(p) = 48$ (C3).
-  - $\text{Range} = 72 - 48 = 24$ semitones (two octaves).
-
-**Musical Context:**  
-Range defines the breadth of pitch content in a piece or section, influencing:
-- **Expressive Scope:** Wider ranges often convey drama or grandeur, while narrow ranges can feel intimate or constrained.
-- **Instrumental Writing:** Determines which instruments or voices can perform the material.
-- **Tessitura and Texture:** High ranges are typically brighter, while low ranges are darker, shaping the overall character of the music.
+Pitch Range helps in understanding the registral span of a passage:
+- **Expressive Qualities:** A wide pitch range can create contrast or drama, while a narrow range may emphasize intimacy or focus.
+- **Instrumental and Vocal Considerations:** Highlights the technical demands on performers by identifying the span of pitches they must navigate.
+- **Comparative Analysis:** Useful in evaluating stylistic tendencies, such as comparing the narrower ranges of early music to the broader ranges in Romantic or contemporary compositions.
 
 ## **5. Tessitura**
 
+**Type:** Secondary  
+**Derived From:**  
+- Primary Parameters: Pitch ($p$).  
+- Aggregate: Time-independent collection of all pitches in the analyzed passage.
+
 **Definition:**  
-The *Tessitura* represents the central range of pitches where the majority of notes in a musical passage are concentrated. Unlike the overall range, it excludes extreme outliers and focuses on the "comfortable zone" of activity.
+The *Tessitura* represents the most frequently used range of pitches in a melodic or harmonic line. It is calculated as the central range of pitches that contains at least half of all note events, providing insight into the tonal or registral "comfort zone" of the music.
 
 **Formula:**  
-To calculate tessitura:
-1. Determine the total number of notes in the passage, $n$.
-2. Identify the subset of notes that accounts for at least half ($\geq n / 2$) of all pitches.
-3. Define the lowest ($\text{Min}(p_{\text{tessitura}})$ and highest ($\text{Max}(p_{\text{tessitura}})$ pitches in this subset.
+Let the sorted pitch set be $P = \{p_1, p_2, \dots, p_k\}$, where $p_i \leq p_{i+1}$, and $k$ is the total number of pitches in the passage. The **Tessitura Range** is:
 
 $$
-\text{Tessitura} = \text{Min}(p_{\text{tessitura}}), \text{Max}(p_{\text{tessitura}})
+\text{Tessitura Range} = [p_{\text{low}}, p_{\text{high}}]
 $$
+
+Where:
+- $p_{\text{low}}$: The smallest pitch such that at least $\lceil k/2 \rceil$ pitches are in the range $[p_{\text{low}}, p_{\text{high}}]$.
+- $p_{\text{high}}$: The largest pitch in the same range.
+
+To find this range:
+1. Sort the pitches in $P$ by ascending order.
+2. Identify all possible contiguous subsets of $P$ containing at least $\lceil k/2 \rceil$ elements.
+3. Choose the subset with the smallest range $[p_{\text{low}}, p_{\text{high}}]$.
 
 **Explanation:**  
-- The tessitura is a range rather than a single value, defined by the bounds within which more than half of all notes occur.
-- Excludes rare extreme pitches that fall outside the central activity zone.
+- **Time Independence:** Tessitura aggregates pitch values without regard to their timing.
+- **Pitch Aggregation:** It identifies a central subset of pitches rather than focusing on individual note events.
+- Unlike the full pitch range (absolute highest to lowest), Tessitura reflects the **core activity zone** of a melodic or harmonic line.
 
 **Examples:**
-- For the pitches $\{60, 62, 64, 64, 67, 69, 72\}$:
-  - Total notes: $n = 7$.
-  - Half of $n$: $7 / 2 = 3.5$ (round up to 4).
-  - Majority subset: $\{62, 64, 64, 67\}$ (middle group of pitches).
-  - Tessitura: $[\text{Min}(p_{\text{tessitura}}), \text{Max}(p_{\text{tessitura}})] = [62, 67]$ (D4 to G4).
-- For a wider set $\{48, 52, 55, 60, 64, 64, 64, 67, 72\}$:
-  - Total notes: $n = 9$.
-  - Half of $n$: $9 / 2 = 4.5$ (round up to 5).
-  - Majority subset: $\{60, 64, 64, 64, 67\}$.
-  - Tessitura: $[60, 67]$ (C4 to G4).
+1. For the pitch sequence $\{60, 62, 64, 64, 64, 67, 72\}$:
+   - Sorted pitches: $\{60, 62, 64, 64, 64, 67, 72\}$.
+   - $\lceil k/2 \rceil = 4$, so at least 4 pitches must fall within the range.
+   - Contiguous subsets containing 4 or more pitches:
+     - $\{62, 64, 64, 64\}$ (range $[62, 64]$).
+     - $\{64, 64, 64, 67\}$ (range $[64, 67]$).
+   - Smallest range: $[62, 64]$.
+   - $\text{Tessitura Range: } [62, 64]$.
+2. For the pitch sequence $\{50, 52, 55, 55, 55, 60, 62\}$:
+   - Sorted pitches: $\{50, 52, 55, 55, 55, 60, 62\}$.
+   - $\lceil k/2 \rceil = 4$, so at least 4 pitches must fall within the range.
+   - Contiguous subsets containing 4 or more pitches:
+     - $\{55, 55, 55, 60\}$ (range $[55, 60]$).
+   - $\text{Tessitura Range: } [55, 60]$.
 
 **Musical Context:**  
-Tessitura describes the "active range" of a part:
-- **Vocal Writing:** Indicates the comfortable singing range, essential for evaluating vocal difficulty and strain.
-- **Instrumental Music:** Identifies where the bulk of pitches lie in orchestration, influencing tone and texture.
-- **Expressive Quality:** A high tessitura conveys intensity and tension, while a low tessitura feels grounded and relaxed.
+Tessitura is crucial for understanding the registral tendencies of a melodic or harmonic line:
+- **Vocal and Instrumental Writing:** Helps determine the comfort zone for performers, especially in vocal music, where Tessitura affects ease and timbre.
+- **Expressive Qualities:** A higher Tessitura conveys brightness or tension, while a lower Tessitura suggests warmth or gravity.
+- **Style and Genre:** Different musical styles favor distinct Tessituras (e.g., Baroque music may have a lower Tessitura compared to Romantic-era music).
 
-## **6. Harmonic Partial Frequency**
+## **6. Harmonic Root**
+
+**Type:** Secondary  
+**Derived From:**  
+- Aggregate: Set of simultaneous note events (pitch values).  
+- Primary Parameters: Pitch ($p$).
 
 **Definition:**  
-The *Harmonic Partial Frequency* ($f_n$) represents the relationship of a pitch to a reference fundamental frequency ($f(h)$), expressed as a ratio. It is defined as the $n$-th harmonic partial, where $n$ is the multiplier of the fundamental.
+The *Harmonic Root* identifies the specific pitch (including registration) that serves as the implied fundamental frequency for a set of simultaneous pitches. It represents the **lowest shared harmonic origin** of the aggregate, even if this root is far below the actual played pitches.  This implies that there will often by integer pitch values that are < 0
 
 **Formula:**  
+Let the pitch aggregate be $\{p_1, p_2, \dots, p_k\}$, and their frequencies be $\{f(p_1), f(p_2), \dots, f(p_k)\}$. The **Harmonic Root** is calculated as follows:
+
+1. **Calculate the Harmonic Numbers:**
+
+   For each pitch $p_i$, compute the ratio of its frequency to a candidate root frequency $f_{\text{root}}$:    
 
 $$
-\text{Harmonic Partial Ratio} = \frac{f(p)}{f(h)}
+h_i = \frac{f(p_i)}{f_{\text{root}}}
 $$
+
+   Where $h_i$ should ideally be an integer, corresponding to a position in the harmonic series.
+   
+3. **Identify the Lowest Shared Root:**  
+   Minimize $f_{\text{root}}$ such that:
+   - The resulting harmonic numbers $\{h_1, h_2, \dots, h_k\}$ are as close to integers as possible.
+   - Use least common multiple (LCM) or other numerical methods to align these harmonics.
+
+4. **Convert Root Frequency to Pitch and Registration:**  
+   Given the root frequency $f_{\text{root}}$, convert to pitch and registration:  
+
+$$
+   p_{\text{root}} = 12 \cdot \log_2\left(\frac{f_{\text{root}}}{f_1}\right)
+$$
+   
+   Where $f_1 = 16.35 \, \text{Hz}$ (frequency of C0, the lowest possible C in the system).
+
+---
 
 **Explanation:**  
-- $f(h)$ is the reference fundamental frequency.
-- $f(p)$ is the frequency of the pitch being analyzed.
-- The ratio determines which harmonic partial ($n$) the pitch corresponds to:
-  - $n = 1$: The pitch is the fundamental ($f(p) = f(h)$).
-  - $n = 2$: The pitch is the second harmonic (an octave above the fundamental).
-  - $n = 3$: The pitch is the third harmonic (a fifth above the second harmonic), and so on.
+- **Aggregate Dependency:** The Harmonic Root is derived from the entire set of pitches in the aggregate, rather than any single note.
+- **Registration Inclusion:** The root specifies not only the pitch (e.g., D) but also the octave (e.g., D1, D2, etc.), which is crucial for harmonic alignment.
+- **Harmonic Alignment:** The calculation identifies the **lowest fundamental frequency** consistent with the aggregate, even if that frequency is below the range of played pitches.
 
-**Examples (using ratios):**
-- For a fundamental $f(h) = 130.81 \, \text{Hz}$ (C3):
-  - A pitch at $f(p) = 130.81 \, \text{Hz}$ has a ratio of $n = \frac{130.81}{130.81} = 1$ (first harmonic, C3).
-  - A pitch at $f(p) = 261.63 \, \text{Hz}$ has a ratio of $n = \frac{261.63}{130.81} = 2$ (second harmonic, C4).
-  - A pitch at $f(p) = 392.43 \, \text{Hz}$ has a ratio of $n = \frac{392.43}{130.81} = 3$ (third harmonic, G4).
+---
+
+**Examples:**
+
+1. **C Major Triad (C4, E4, G4):**  
+   - Frequencies: $f(C4) = 261.63 \, \text{Hz}$, $f(E4) = 329.63 \, \text{Hz}$, $f(G4) = 392.00 \, \text{Hz}$.  
+   - Harmonic alignment:  
+     - $C4 = f_{\text{root}} \cdot 1$  
+     - $E4 = f_{\text{root}} \cdot 5/4$  
+     - $G4 = f_{\text{root}} \cdot 3/2$  
+   - $f_{\text{root}} = 130.81 \, \text{Hz}$ (C3).  
+   - **Harmonic Root: C3**.
+
+2. **D Minor Triad (D4, F4, A4):**  
+   - Frequencies: $f(D4) = 293.66 \, \text{Hz}$, $f(F4) = 349.23 \, \text{Hz}$, $f(A4) = 440.00 \, \text{Hz}$.  
+   - Harmonic alignment:  
+     - $D4 = f_{\text{root}} \cdot 2$  
+     - $F4 = f_{\text{root}} \cdot 6/5$  
+     - $A4 = f_{\text{root}} \cdot 3$  
+   - $f_{\text{root}} = 146.83 \, \text{Hz}$ (D3).  
+   - **Harmonic Root: D3**.
+
+3. **Ambiguous Aggregate (E4, G4, C5):**  
+   - Frequencies: $f(E4) = 329.63 \, \text{Hz}$, $f(G4) = 392.00 \, \text{Hz}$, $f(C5) = 523.25 \, \text{Hz}$.  
+   - Possible roots:  
+     - $f_{\text{root}} = 130.81 \, \text{Hz}$ (C3, assuming a C-based chord).  
+     - $f_{\text{root}} = 98.00 \, \text{Hz}$ (G2, assuming G as the root).  
+   - Resolution: Root depends on alignment with harmonic series.
+
+---
 
 **Musical Context:**  
-Expressing harmonic relationships as ratios:
-- **Harmonic Relationships:** Ratios simplify calculations for harmonic structures, avoiding reliance on absolute frequencies.
-- **Timbre Analysis:** Harmonic partial ratios highlight the strength and distribution of harmonics that define an instrument's timbre.
-- **Musical Intervals:** Directly connect ratios to intervallic relationships (e.g., $n = 2$ is an octave, $n = 3$ is a fifth above).
+The Harmonic Root is critical for:
+- **Harmonic Analysis:** Identifying tonal centers in both tonal and atonal contexts.
+- **Chord Identification:** Recognizing root notes even in ambiguous or extended aggregates.
+- **Generative Music Systems:** Supporting harmonic and tonal generation in computational models.
+
+---
+
+Let me know if this works or if further refinements are needed!
+
 
 ## **7. Frequency Ratio Between Notes**
 
