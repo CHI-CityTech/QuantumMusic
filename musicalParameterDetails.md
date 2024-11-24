@@ -1,6 +1,9 @@
 ### TOC
-#### **1. Pitch Class**
-#### **2. Registration**
+- 1. Pitch Class
+- 2. Registration
+- 3. Frequency Ratio Between Notes** (Interval/Harmony)
+- 4. Interval Contour (Melody)
+
 
 # Comprehensive Musical Parameters
 ## **Notation**
