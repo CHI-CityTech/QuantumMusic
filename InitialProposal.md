@@ -1,3 +1,5 @@
+<img align="left" src= "/assets/images/Music%20and%20Feynman%20illustration%20DALL%C2%B7E%202024-11-25%2010.20.35.png" width="180">
+
 # **Research Proposal: Quantum and Fuzzy Logic-Driven Musical Composition with Syntactic Awareness and Cross-Cultural Applicability**
 
 Draft!  All information in this proposal is tentative, subject to further discussion and feasability.
