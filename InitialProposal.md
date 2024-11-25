@@ -106,7 +106,7 @@ By situating quantum computing within this research, we unlock new possibilities
 
 ---
 
-### **2. Objective of This Research**
+## **2. Objective of This Research**
 This research seeks to formalize the hierarchical, recursive, and syntactic structures of music into a computational framework. By developing a comprehensive set of parameters, we aim to model the stylistic tendencies of a composer or tradition with a substantial body of work. These parameters will:
 - **Capture Organizational Syntax**: Represent the structural and stylistic elements that define a composer’s music.
 - **Enable Manipulation and Interpolation**: Provide tools for analyzing, transforming, or synthesizing new compositions.
