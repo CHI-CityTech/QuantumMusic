@@ -21,8 +21,8 @@ At its core, music is built on **patterns**, which are recognizable repetitions 
 
 
 <img src= "/assets/images/Lehrdahl%20Music%20Tree%20illustration.png" width="640">  
-*fig 1. Example of music at the lowest level of individual events and how they are part of a larger hierarchical structure.*  [^2]
 
+*fig 1. Example of music at the lowest level of individual events and how they are part of a larger hierarchical structure.*  [^2]
 
 Patterns rely on **hierarchical and recursive structures**. A single note contributes to a motif, which combines with others into a phrase, which in turn builds larger forms like themes, movements, and entire compositions. This recursive nature mirrors the way language is structured, with smaller units nested within larger ones to convey meaning. At a high level, a symphony’s movements can be seen as recursive transformations of its thematic material, a hallmark of composers like Beethoven.
 
