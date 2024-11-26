@@ -19,6 +19,10 @@ Music is a deeply layered art form that can be understood as **the organization 
 #### **1.1.1 The Nature of Musical Patterns**
 At its core, music is built on **patterns**, which are recognizable repetitions of sound elements such as pitch, rhythm, timbre, and dynamics. These patterns exist across all timescales and levels of abstraction, from short motifs to expansive formal structures, and even across entire bodies of work. Patterns are not static; their power often lies in their transformation and manipulation.
 
+![Recursive Structure of Music from Lehrdahl](https://github.com/CHI-CityTech/QuantumMusic/blob/main/assets/images/Lehrdahl%20Music%20Tree%20illustration.png)  
+*Example of music at the lowest level of individual events and how they are part of a larger hierarchical structure.*  [^2]
+
+
 Patterns rely on **hierarchical and recursive structures**. A single note contributes to a motif, which combines with others into a phrase, which in turn builds larger forms like themes, movements, and entire compositions. This recursive nature mirrors the way language is structured, with smaller units nested within larger ones to convey meaning. At a high level, a symphony’s movements can be seen as recursive transformations of its thematic material, a hallmark of composers like Beethoven.
 
 ##### **Patterns and Perception**
@@ -250,3 +254,5 @@ Include foundational research on TDA, quantum computing, fuzzy logic, and algori
 
 ---
 [^1]: Leonard B. Meyer explored how music engages listeners by creating patterns that evoke expectations, then manipulating or breaking those expectations to generate emotional and cognitive responses, driving both meaning and innovation in musical expression. [(Meyer, 1994)](https://press.uchicago.edu/ucp/books/book/chicago/M/bo3629352.html) 
+[^2]: [“Semiotics, Pragmatics, and Metaphor in Film Music Analysis.” ResearchGate, 1 Jan. 2009](https://www.researchgate.net/publication/242726397_Semiotics_Pragmatics_and_Metaphor_in_Film_Music_Analysis/figures?lo=1)
+
