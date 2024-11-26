@@ -2,7 +2,7 @@
 
 # **Research Proposal: Quantum and Fuzzy Logic-Driven Musical Composition with Syntactic Awareness and Cross-Cultural Applicability**
 
-Draft!  All information in this proposal is tentative, subject to further discussion and feasability.
+**Draft!  All information in this proposal is tentative, subject to further discussion and feasability.**
 
 Dr. David B. Smith  
 2024-11-25
@@ -17,7 +17,7 @@ Central to this research is the system’s ability to generalize across cultural
 Music is a deeply layered art form that can be understood as **the organization of sound events in time**, though its reach can extend far beyond sound alone. The Greek term [**mousike**](https://www.jstor.org/stable/j.ctvbj7g5b.22) reflected this breadth, encompassing dance, performance, and all forms of harmonious human expression. As a universal phenomenon, music operates on multiple levels—technical, emotional, cultural—creating a rich interplay of structure and meaning.
 
 #### **1.1.1 The Nature of Musical Patterns**
-At its core, music is built on **patterns**, which are recognizable repetitions of sound elements such as pitch, rhythm, timbre, and dynamics. These patterns exist across varying timescales and levels of abstraction, from short motifs to expansive formal structures. Patterns are not static; their power often lies in their transformation and manipulation.
+At its core, music is built on **patterns**, which are recognizable repetitions of sound elements such as pitch, rhythm, timbre, and dynamics. These patterns exist across all timescales and levels of abstraction, from short motifs to expansive formal structures, and even across entire bodies of work. Patterns are not static; their power often lies in their transformation and manipulation.
 
 Patterns rely on **hierarchical and recursive structures**. A single note contributes to a motif, which combines with others into a phrase, which in turn builds larger forms like themes, movements, and entire compositions. This recursive nature mirrors the way language is structured, with smaller units nested within larger ones to convey meaning. At a high level, a symphony’s movements can be seen as recursive transformations of its thematic material, a hallmark of composers like Beethoven.
 
