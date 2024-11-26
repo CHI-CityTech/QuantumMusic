@@ -19,8 +19,9 @@ Music is a deeply layered art form that can be understood as **the organization 
 #### **1.1.1 The Nature of Musical Patterns**
 At its core, music is built on **patterns**, which are recognizable repetitions of sound elements such as pitch, rhythm, timbre, and dynamics. These patterns exist across all timescales and levels of abstraction, from short motifs to expansive formal structures, and even across entire bodies of work. Patterns are not static; their power often lies in their transformation and manipulation.
 
-![Recursive Structure of Music from Lehrdahl](https://github.com/CHI-CityTech/QuantumMusic/blob/main/assets/images/Lehrdahl%20Music%20Tree%20illustration.png)  
-*Example of music at the lowest level of individual events and how they are part of a larger hierarchical structure.*  [^2]
+
+<img src= "/assets/images/Lehrdahl%20Music%20Tree%20illustration.png" width="640">  
+*fig 1. Example of music at the lowest level of individual events and how they are part of a larger hierarchical structure.*  [^2]
 
 
 Patterns rely on **hierarchical and recursive structures**. A single note contributes to a motif, which combines with others into a phrase, which in turn builds larger forms like themes, movements, and entire compositions. This recursive nature mirrors the way language is structured, with smaller units nested within larger ones to convey meaning. At a high level, a symphony’s movements can be seen as recursive transformations of its thematic material, a hallmark of composers like Beethoven.
@@ -29,6 +30,7 @@ Patterns rely on **hierarchical and recursive structures**. A single note contri
 The human appreciation of music arises from the interplay between the recognition of patterns and their artful disruption. A predictable pattern provides a sense of stability and familiarity, while the unexpected breaking or transformation of a pattern introduces surprise and emotional engagement[^1]. For instance:
 - A listener might anticipate a cadence but instead encounter an unexpected modulation.
 - A rhythmic groove may suddenly shift to a different meter, invigorating the flow of the piece.
+- In fig 1. above, one sees how the rhythmic motive is identical in measures 1 and 2, then drops the sixteenth note in measure 3 instead of continuing with the pattern.
 
 This balance of expectation and surprise is universal, though its specifics vary greatly across cultural traditions.
 
@@ -37,7 +39,7 @@ Music also serves as a cultural artifact, encoding traditions and shared experie
 
 ### **1.2 Context of Quantum Computing in this Research**
 
-Quantum computing provides a foundational framework for analyzing and synthesizing the complex structures of music in this proposed project. By leveraging principles like superposition, entanglement, and probabilistic sampling, quantum systems offer a novel approach to processing high-dimensional musical data, enabling an efficient technique to explore the patterns and their multi-dimensional relationships across diverse stylees and traditions.
+We propose to use Quantum computing to provide a foundational framework for analyzing and then synthesizing the complex structures of music. By leveraging principles like superposition, entanglement, and probabilistic sampling, quantum systems offer an alternative approach to processing high-dimensional musical data, enabling an efficient technique to explore the patterns and their multi-dimensional relationships across diverse stylees and traditions.
 
 #### **1.2.1 Superposition: Exploring Complex Possibilities**
 Superposition allows quantum bits (qubits) to exist in multiple states simultaneously, making it possible to analyze large datasets and even larger sets of combinatorial possibilities to uncover meaningful relationships within musical structures. This capability supports:  
