@@ -8,7 +8,7 @@ Dr. David B. Smith
 2024-11-25
 
 ## **1. Introduction**
-Music, a universal expressive art form common across all human culture, is shaped by distinctive syntactic structures that define its many different styles. This research project proposes a novel system for generating derivative compositions in the style of a chosen composer, tradition, or combination thereof. By incorporating **syntactic awareness** and leveraging **quantum computing**, **fuzzy logic**, and **Topological Data Analysis (TDA)**, the system will analyze, model, and generate music with stylistic fidelity and creative flexibility.
+Music, a universal expressive art form common across all human culture, is shaped by distinctive syntactic structures that define its many different styles. This research project proposes a novel system for generating derivative compositions in the style of a chosen composer, tradition, or combination thereof. By incorporating [**syntactic awareness**](https://en.wikipedia.org/wiki/Musical_syntax) and leveraging **quantum computing**, **fuzzy logic**, and **Topological Data Analysis (TDA)**[^1], the system will analyze, model, and generate music with stylistic fidelity and creative flexibility.
 
 Central to this research is the system’s ability to generalize across cultural traditions, ensuring its applicability beyond Western classical music. Whether analyzing Bach chorales or Javanese gamelan compositions, the system adapts to any sufficiently sized dataset, offering broad utility for creative exploration and cultural preservation.
 
@@ -17,17 +17,17 @@ Central to this research is the system’s ability to generalize across cultural
 Music is a deeply layered art form that can be understood as **the organization of sound events in time**, though its reach can extend far beyond sound alone. The Greek term [**mousike**](https://www.jstor.org/stable/j.ctvbj7g5b.22) reflected this breadth, encompassing dance, performance, and all forms of harmonious human expression. As a universal phenomenon, music operates on multiple levels—technical, emotional, cultural—creating a rich interplay of structure and meaning.
 
 #### **1.1.1 The Nature of Musical Patterns**
-At its core, music is built on **patterns**, which are recognizable repetitions of sound elements such as pitch, rhythm, timbre, and dynamics. These patterns exist across all timescales and levels of abstraction, from short motifs to expansive formal structures, and even across entire bodies of work. Patterns are not static; their power often lies in their transformation and manipulation.
+At its core, music is built on **patterns**, which are recognizable repetitions of sound elements such as pitch, rhythm, timbre, and dynamics. These patterns exist across all timescales and levels of abstraction, from short motifs to complete musical pieces, and even across entire bodies of work. Patterns are not static; their power often lies in their transformation and manipulation: this manipulation is what can lead to delight and surprise from an engaged listener.
 
 
 <img src= "/assets/images/Lehrdahl%20Music%20Tree%20illustration.png" width="640">  
 
 *fig 1. Example of music at the lowest level of individual events and how they are part of a larger hierarchical structure.*  [^2]
 
-Patterns rely on **hierarchical and recursive structures**. A single note contributes to a motif, which combines with others into a phrase, which in turn builds larger forms like themes, movements, and entire compositions. This recursive nature mirrors the way language is structured, with smaller units nested within larger ones to convey meaning. At a high level, a symphony’s movements can be seen as recursive transformations of its thematic material, a hallmark of composers like Beethoven.
+Patterns rely on **hierarchical and recursive structures**. A single note contributes to a [motif](https://en.wikipedia.org/wiki/Motif_(music)), which combines with others into a phrase, which in turn builds larger forms like themes, movements, and entire compositions. This recursive nature mirrors the way language is structured, with smaller units nested within larger ones to convey meaning. At a high level, a symphony’s movements can be seen as recursive transformations of its thematic material, a hallmark of composers like Beethoven.
 
 ##### **Patterns and Perception**
-The human appreciation of music arises from the interplay between the recognition of patterns and their artful disruption. A predictable pattern provides a sense of stability and familiarity, while the unexpected breaking or transformation of a pattern introduces surprise and emotional engagement[^1]. For instance:
+The human appreciation of music arises from the interplay between the recognition of patterns and their artful disruption. A predictable pattern provides a sense of stability and familiarity, while the unexpected breaking or transformation of a pattern introduces surprise and emotional engagement[^3]. For instance:
 - A listener might anticipate a cadence but instead encounter an unexpected modulation.
 - A rhythmic groove may suddenly shift to a different meter, invigorating the flow of the piece.
 - In fig 1. above, one sees how the rhythmic motive is identical in measures 1 and 2, then drops the sixteenth note in measure 3 instead of continuing with the pattern.
@@ -255,6 +255,7 @@ This research introduces a quantum-assisted framework for syntactically aware, c
 Include foundational research on TDA, quantum computing, fuzzy logic, and algorithmic composition.
 
 ---
-[^1]: Leonard B. Meyer explored how music engages listeners by creating patterns that evoke expectations, then manipulating or breaking those expectations to generate emotional and cognitive responses, driving both meaning and innovation in musical expression. [(Meyer, 1994)](https://press.uchicago.edu/ucp/books/book/chicago/M/bo3629352.html) 
-[^2]: [“Semiotics, Pragmatics, and Metaphor in Film Music Analysis.” ResearchGate, 1 Jan. 2009](https://www.researchgate.net/publication/242726397_Semiotics_Pragmatics_and_Metaphor_in_Film_Music_Analysis/figures?lo=1)
+[^1]: There are a variety of tools available to apply TDA computationally. [((Munch))](https://learning-analytics.info/index.php/JLA/article/view/5196/6089)
+[^2]: Leonard B. Meyer explored how music engages listeners by creating patterns that evoke expectations, then manipulating or breaking those expectations to generate emotional and cognitive responses, driving both meaning and innovation in musical expression. [(Meyer, 1994)](https://press.uchicago.edu/ucp/books/book/chicago/M/bo3629352.html) 
+[^3]: [“Semiotics, Pragmatics, and Metaphor in Film Music Analysis.” ResearchGate, 1 Jan. 2009](https://www.researchgate.net/publication/242726397_Semiotics_Pragmatics_and_Metaphor_in_Film_Music_Analysis/figures?lo=1)
 
