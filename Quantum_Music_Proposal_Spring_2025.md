@@ -304,7 +304,7 @@ This  timeline ensures a manageable scope while laying the groundwork for a more
 
 ## 7. Contact
 
-Project Lead is Dr. David B. Smith  
+Project Management Lead: is Dr. David B. Smith   
 dsmith@citytech.cuny.edu  
 [Website](https://sites.google.com/view/drdavidbsmith/home)  
 Discord: @davidbrucesmith  
