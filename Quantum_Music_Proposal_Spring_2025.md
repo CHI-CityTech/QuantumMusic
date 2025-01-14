@@ -76,7 +76,7 @@ In order to manage content, deliverables, and code integrity, the research team 
   - Each student must create a free [Zotero account](https://www.zotero.org/user/register/) and join the shared group library [**Quantum_AI_Music**](https://www.zotero.org/groups/5772697/quantum_ai_music) for the project.
   - Students will be responsible for adding and tagging relevant resources.
 
-#### **3.1.3 Discord (Informal Communication)**
+#### **3.1.3 [Discord](https://discord.com/) (Informal Communication)**
 - **Purpose:** Facilitate real-time collaboration and informal discussion.
 - **Action Required:**
   - Join the Discord Server [Quantum_AI_Music](https://discord.gg/6qaKfbnQ) (This link expires on Jan 21 2025. Contact dbs if needing a new invitation).
@@ -94,7 +94,7 @@ Each researcher will be making different contributions to the overall project.  
 #### **3.2.1 Background and Aspirations**
 - **Purpose:** Understand each student’s expertise and goals to align roles and tasks effectively.
 - **Action Required:**
-  - Students should submit a brief summary addressing:
+  - Each student submits a brief summary addressing:
     - Their academic and technical background.
     - Relevant skills or experiences (e.g., programming, music analysis, research).
     - Aspirations for this project (e.g., skills they hope to develop, career interests).
