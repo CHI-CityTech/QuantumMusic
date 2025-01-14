@@ -24,7 +24,7 @@ This research explores the use of quantum computing in music analysis and genera
 The semester-long activity will focus on developing a foundational framework, assessing quantum computing resources, preparing datasets, and conducting initial tests.
 
 ---
-## **Personnel**
+## **2. Personnel**
 
 ### **Project Leadership**
 
@@ -40,7 +40,101 @@ The semester-long activity will focus on developing a foundational framework, as
      - Direct creative and technical aspects of the project.
      - Ensure cohesion between music theory and computational approaches.
 
+## **3. Project Setup**
+
+In order to manage content, deliverables, and ensure that the project is moving forward, research team will need to claim access to different productivity resources.  These are listed below.  Each researcher should ensure that they are able to access each of these resources.  Detailed instructions will be found once this proposal is accepted.   
+
+### **3.1 Tools and Platforms**
+
+#### **3.1.1 [GitHub](https://github.com/) (Version Control and Project Management)**
+- **Purpose:** Centralize code development, project documentation, and version control.
+- **Action Required:** 
+  - Each student must create a GitHub account if they don’t already have one.
+  - Students will be added to the project repository for collaboration.
+
+#### **3.1.2 [Zotero](https://www.zotero.org/) (Research Documentation and Citation Management)**
+- **Purpose:** Organize and cite research materials efficiently in a shared repository
+- **Action Required:**
+  - Each student must create a free [Zotero account](https://www.zotero.org/user/register/) and join the shared group library [**Quantum_AI_Music**](https://www.zotero.org/groups/5772697/quantum_ai_music) for the project.
+  - Students will be responsible for adding and tagging relevant resources.
+
+#### **3.1.3 Discord (Informal Communication)**
+- **Purpose:** Facilitate real-time collaboration and informal discussion.
+- **Action Required:**
+  - Determine whether to create a new Discord server for this project or integrate it into the BSP project server.
+  - Set up channels for topics such as:
+    - General Discussions
+    - Data Preparation
+    - Algorithm Development
+    - Quantum Computing Resources
+    - Documentation and Dissemination
+
 ---
+
+### **3.2. Student Contributions**
+Each researcher will make different contributions to teh overall project.  In order to appropriately assess this, it is important that each researcher provide information as requested in 3.2.1 below.  
+
+#### **3.2.1 Background and Aspirations**
+- **Purpose:** Understand each student’s expertise and goals to align roles and tasks effectively.
+- **Action Required:**
+  - Students should submit a brief summary addressing:
+    - Their academic and technical background.
+    - Relevant skills or experiences (e.g., programming, music analysis, research).
+    - Aspirations for this project (e.g., skills they hope to develop, career interests).
+  - Summaries should be shared via email or a shared document repository.
+
+#### **3.2.2 Initial Research Tasks**
+- **Purpose:** Ensure all team members have a foundational understanding of the project context.
+- **Action Required:**
+  - Students will review introductory materials on:
+    - Quantum computing basics.
+    - Musical syntax and structure.
+    - Tools for symbolic music data (e.g., MIDI, MusicXML).
+
+---
+
+### **3.3 Additional Setup Activities**
+
+#### **3.3.1 Resource Access**
+- **Purpose:** Ensure students have access to necessary platforms and tools.
+- **Action Required:**
+  - Confirm access to quantum computing resources, such as IBM Quantum.
+  - Provide instructions for accessing project-specific tools and datasets.
+
+#### **3.3.2 Team Collaboration Infrastructure**
+- **Purpose:** Establish infrastructure for collaboration and task tracking.
+- **Action Required:**
+  - Set up a shared project folder (e.g., Google Drive or OneDrive) for non-code documents.
+  - Determine task management tools (e.g., GitHub Issues or a Trello board).
+
+#### **3.3.3 Orientation and Training**
+- **Purpose:** Equip students with the knowledge and tools they need to contribute effectively.
+- **Action Required:**
+  - Schedule an orientation meeting to outline the project goals and methodology.
+  - Provide optional training sessions or resources for GitHub, Zotero, and relevant programming languages or frameworks.
+
+---
+
+### **3.4. Communication Plan**
+
+- **Purpose:** Ensure clear and consistent communication across the team.
+- **Action Required:**
+  - Define the frequency and format of meetings (e.g., weekly check-ins on Zoom or Discord).
+  - Assign a note-taker for meetings to document key decisions and action items.
+  - Encourage asynchronous updates via GitHub or Discord for ongoing tasks.
+
+---
+
+### **3.5. Deliverables for Setup Phase**
+
+1. All students signed up for GitHub, Zotero, and Discord.
+2. Completed student summaries outlining background and aspirations.
+3. Shared project folder and repositories set up with initial access granted.
+4. Orientation meeting held with clear goals and timelines established.
+5. Initial research materials distributed and reviewed by students.
+
+---
+
 
 ### **Potential Student Research Roles**
 
@@ -192,6 +286,37 @@ While individual students may assume specific primary roles, responsibilities ma
 | **Testing and Evaluation**     | Weeks 7-10 | Experimental results analyzed.               |
 | **Final Reporting**            | Weeks 11-12 | Report and presentation completed.           |
 
+### Proposed Gantt Chart
+
+```mermaid
+gantt
+    title Quantum Music Generation Research Timeline (12 Weeks)
+    dateFormat  YYYY-MM-DD
+    axisFormat %m/%d
+    
+    section Framework Design
+    Literature Review & Framework Design :2025-01-24, 2w
+    
+    section Resource Assessment
+    Quantum Platform Exploration :2025-02-07, 1w
+    Feasibility Testing :2025-02-07, 1w
+    
+    section Data Preparation
+    Dataset Curation :2025-02-14, 2w
+    Data Encoding & Normalization :2025-02-21, 1w
+    
+    section Algorithm Development
+    Design Quantum Algorithms :2025-02-28, 2w
+    Implementation & Initial Testing :2025-03-07, 1w
+    
+    section Testing & Evaluation
+    Experimental Testing :2025-03-14, 2w
+    Result Analysis :2025-03-28, 2w
+    
+    section Final Phase
+    Report Preparation :2025-04-11, 1w
+    Final Presentation :2025-04-18, 1w
+```
 ---
 
 ## **6. Adjustments for Ambition**
