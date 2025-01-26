@@ -9,10 +9,10 @@ Repository for material involving the use of quantum computing to generate music
 
 Current Documentation for this project is listed below.  
 
-[Spring 2025 Research Proposal](https://github.com/CHI-CityTech/QuantumMusic/blob/main/Proposal_Initial_Steps_2025.md)  
+[Spring 2025 Research Proposal](https://github.com/CHI-CityTech/QuantumMusic/blob/main/Proposals/Proposal_Initial_Steps_2025.md)  
 A more targeted proposal to encompass activity in Spring 2025.
 
-[Initial Proposal](https://github.com/CHI-CityTech/QuantumMusic/blob/main/InitialProposal.md)  
+[Initial Proposal](https://github.com/CHI-CityTech/QuantumMusic/blob/main/Proposals/InitialProposal.md))  
 Outlines the proposal and provides some organizing principles and discussion.  This is a draft document.  
 
 [Potential Musical Parameters](https://github.com/CHI-CityTech/QuantumMusic/blob/main/Potential-Musical-Parameters.md)
