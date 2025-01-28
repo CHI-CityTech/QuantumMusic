@@ -1,11 +1,12 @@
 
 <img align="left" src= "/assets/images/Music%20and%20Feynman%20illustration%20DALL%C2%B7E%202024-11-25%2010.20.35.png" width="180">
 
-# QuantumMusic
+# QuantumMusic 
 
 Repository for material involving the use of quantum computing to generate musically appropriate output consistent with the style of  an existing composer.  
 
 ---
+First assignments are to create a GitHub account which you can do [here](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github)
 
 Current Documentation for this project is listed below.  
 
