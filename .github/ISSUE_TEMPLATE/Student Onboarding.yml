@@ -49,7 +49,7 @@ body:
       label: "Academic and Technical Background"
       description: "Briefly summarize your academic and technical experience."
     validations:
-      required: true      required: true
+      required: true
 
   - type: textarea
     id: skills_experience
