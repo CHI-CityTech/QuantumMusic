@@ -39,7 +39,7 @@ body:
     id: research_contribution
     attributes:
       label: "Contribution Based on Research Proposal"
-      description: "Based on the research proposal ([Quantum Music Proposal](https://github.com/CHI-CityTech/QuantumMusic/blob/main/Proposals/Quantum_Music_Proposal_Spring_2025.md)), which areas are you interested in contributing to?"
+      description: "Considering the objectives outlined in the [Quantum Music Proposal](https://github.com/CHI-CityTech/QuantumMusic/blob/main/Proposals/Quantum_Music_Proposal_Spring_2025.md), which specific areas align with your interests and where do you see yourself contributing? Suggested types of roles can be found in [Section 3.6: Potential Student Research Roles](https://github.com/CHI-CityTech/QuantumMusic/blob/main/Proposals/Quantum_Music_Proposal_Spring_2025.md#36-potential-student-research-roles)."
     validations:
       required: true
 
@@ -64,13 +64,11 @@ body:
     attributes:
       label: "Aspirations for This Project"
       description: "Describe what skills you hope to develop and how this aligns with your career interests."
-    validations:
-      required: true
+    validations: required: true
 
   - type: textarea
     id: activity_interest
     attributes:
       label: "Interest in Project Activities"
       description: "Based on the types of activities and assignments for this project, which area are you interested in?"
-    validations:
-      required: true
+    validations: required: true
