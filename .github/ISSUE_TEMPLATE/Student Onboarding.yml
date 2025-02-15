@@ -64,11 +64,13 @@ body:
     attributes:
       label: "Aspirations for This Project"
       description: "Describe what skills you hope to develop and how this aligns with your career interests."
-    validations: required: true
+    validations:
+      required: true
 
   - type: textarea
     id: activity_interest
     attributes:
       label: "Interest in Project Activities"
       description: "Based on the types of activities and assignments for this project, which area are you interested in?"
-    validations: required: true
+    validations:
+      required: true
