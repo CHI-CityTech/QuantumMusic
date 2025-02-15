@@ -1,0 +1,78 @@
+name: "Student Onboarding Task"
+description: "Collect information on student expertise, goals, and relevant accounts."
+labels: [student-info, onboarding]
+assignees: []
+body:
+  - type: input
+    id: github_username
+    attributes:
+      label: "GitHub User Name"
+      description: "Enter your GitHub username."
+    validations:
+      required: true
+
+  - type: input
+    id: zotero_username
+    attributes:
+      label: "Zotero User Name"
+      description: "Enter your Zotero username."
+    validations:
+      required: true
+
+  - type: input
+    id: discord_username
+    attributes:
+      label: "Discord User Name"
+      description: "Enter your Discord username."
+    validations:
+      required: true
+
+  - type: input
+    id: resume
+    attributes:
+      label: "Resume (Link or File)"
+      description: "Provide a link to your resume or attach a file."
+    validations:
+      required: false
+
+  - type: textarea
+    id: research_contribution
+    attributes:
+      label: "Contribution Based on Research Proposal"
+      description: "Based on the research proposal ([Quantum Music Proposal](https://github.com/CHI-CityTech/QuantumMusic/blob/main/Proposals/Quantum_Music_Proposal_Spring_2025.md)), which areas are you interested in contributing to?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: background
+    attributes:
+      label: "Academic and Technical Background"
+      description: "Briefly summarize your academic and technical experience."
+    validations:
+      required: true      required: true
+
+  - type: textarea
+    id: skills_experience
+    attributes:
+      label: "Relevant Skills or Experiences"
+      description: "List any relevant skills such as programming, music analysis, or research."
+    validations:
+      required: true
+
+  - type: textarea
+    id: aspirations
+    attributes:
+      label: "Aspirations for This Project"
+      description: "Describe what skills you hope to develop and how this aligns with your career interests."
+    validations:
+      required: true
+
+  - type: textarea
+    id: activity_interest
+    attributes:
+      label: "Interest in Project Activities"
+      description: "Based on the types of activities and assignments for this project, which area are you interested in?"
+    validations:
+      required: true      required: true      required: true
+
+      required: true
