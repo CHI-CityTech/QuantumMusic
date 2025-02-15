@@ -69,7 +69,7 @@ In order to manage content, deliverables, and code integrity, the research team 
 - **Action Required:** 
   - Each student must create a GitHub account if they don’t already have one.
   - Students will be added to the project repository for collaboration.
-  - Ensure that part of your GitHub user name is your real name (see [here](https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git))
+  - Ensure that part of your GitHub user name is your real name (see [setting up your user name in GitHub](https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git))
 
 #### **3.1.2 [Zotero](https://www.zotero.org/) (Research Documentation and Citation Management)**
 - **Purpose:** Organize and cite research materials efficiently in a shared repository
@@ -80,7 +80,7 @@ In order to manage content, deliverables, and code integrity, the research team 
 #### **3.1.3 [Discord](https://discord.com/) (Informal Communication)**
 - **Purpose:** Facilitate real-time collaboration and informal discussion.
 - **Action Required:**
-  - Join the Discord Server [Quantum_AI_Music](https://discord.gg/6qaKfbnQ) (This link expires on Jan 21 2025. Contact dbs if needing a new invitation).
+  - Join the Discord Server [Quantum_AI_Music](https://discord.gg/qKh9g5CE) (This link expires on Feb 22 2025. Contact dbs if needing a new invitation).
   - Ensure that your display name is your real name, and if not, then a server nickname will need to be assigned (see [here](https://support.discord.com/hc/en-us/articles/12620128861463-New-Usernames-Display-Names#:~:text=Display%20names%20are%20not%20unique,appear%20as%20your%20display%20name.)  
   - Set up channels for topics such as:
     - General Discussions
@@ -120,8 +120,7 @@ Each researcher will be making different contributions to the overall project.  
 #### **3.3.2 Team Collaboration Infrastructure**
 - **Purpose:** Establish infrastructure for collaboration and task tracking.
 - **Action Required:**
-  - Set up a shared project folder (e.g., Google Drive or OneDrive) for non-code documents.
-  - Determine task management tools (e.g., GitHub Issues or a Trello board).
+  - Set up a shared GitHub repository for task management and document storage.
 
 #### **3.3.3 Orientation and Training**
 - **Purpose:** Equip students with the knowledge and tools they need to contribute effectively.
