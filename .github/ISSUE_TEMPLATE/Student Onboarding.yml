@@ -73,6 +73,4 @@ body:
       label: "Interest in Project Activities"
       description: "Based on the types of activities and assignments for this project, which area are you interested in?"
     validations:
-      required: true      required: true      required: true
-
       required: true
