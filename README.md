@@ -4,6 +4,10 @@
 # QuantumMusic 
 
 Repository for material involving the use of quantum computing to generate musically appropriate output consistent with the style of  an existing composer.  
+---
+It is now time to move to initial assignments, and completing the onboading process.
+
+
 
 ---
 First assignments are to create a GitHub account which you can do [here](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github)
