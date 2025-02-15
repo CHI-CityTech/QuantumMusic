@@ -1,9 +1,10 @@
 # **Research Protocol: Quantum Music Generation**
 **(Semester Plan)**  
   Dr David B. Smith  
-  2025-01-24  
   Center for Holistic Integration  
   NYC College of Technology  
+  _updated 2025-02-15  
+  created 2025-01-24_  
 
 **Advisors**  
  - Professor Oleg Berman - Physics  
