@@ -2,7 +2,6 @@ name: "Student Onboarding Task"
 description: "Collect information on student expertise, goals, and relevant accounts."
 labels: [student-info, onboarding]
 projects: ["CHI-CityTech/QuantumMusic S2025"]
-repository: "CHI-CityTech/QuantumMusic"
 assignees: []
 body:
   - type: input
