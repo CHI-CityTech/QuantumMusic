@@ -14,7 +14,8 @@
  - Mellisa Demolari  
  - Elizabeth Frias  
  - Houke Gao  
- - Stefanie Rivera  
+ - Stefanie Rivera
+ - Sunima Dangol
 
 ## **1 Introduction**
 
