@@ -1,6 +1,6 @@
 # MathJax Formula Test
 
-This document contains a variety of formulas to test **MathJax** rendering on GitHub Pages.
+This document contains a variety of formulas to test **MathJax** rendering on GitHub Pages.  These are useful in generating documents etc.
 
 ---
 
