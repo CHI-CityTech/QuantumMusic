@@ -1,3 +1,4 @@
+# QuantumMusic Research Spring 2025
 ## **Setup Instructions for Students**
 
 Welcome to the **Quantum Music Generation** research project! Below are the required steps to get started. Each task ensures you have access to the necessary tools, platforms, and resources to collaborate effectively.  
@@ -60,6 +61,7 @@ The GitHub repository we will be using is [CHI-CityTech/QuantumMusic](https://gi
    - **Technical skills** (coding, music theory, data analysis, etc.).
    - **Project goals** (what you hope to learn or achieve).
    - Any **previous experience** related to AI, music, or research.
+   - Which parts of this project you are interested in working on.
 2. Submit your response to the [Google Doc in your own tab](https://docs.google.com/document/d/1irvSptRh2xP27G0XO2RjiEwxyW56vLahqmT4fDZtWR8/edit?usp=sharing)
 
 ---
