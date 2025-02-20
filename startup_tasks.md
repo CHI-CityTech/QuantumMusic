@@ -58,7 +58,7 @@ The GitHub repository we will be using is [CHI-CityTech/QuantumMusic](https://gi
    - **Technical skills** (coding, music theory, data analysis, etc.).
    - **Project goals** (what you hope to learn or achieve).
    - Any **previous experience** related to AI, music, or research.
-2. Submit your response to the shared project folder (link will be provided).
+2. Submit your response to the [Google Doc in your own tab](https://docs.google.com/document/d/1irvSptRh2xP27G0XO2RjiEwxyW56vLahqmT4fDZtWR8/edit?usp=sharing)
 
 ---
 
