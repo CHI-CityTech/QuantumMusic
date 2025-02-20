@@ -5,11 +5,16 @@
 
 Repository for material involving the use of quantum computing to generate musically appropriate output consistent with the style of  an existing composer.  
 ---
+### 2025-02-20 Assignments
+
+[Startup tasks can be found at this document](https://github.com/CHI-CityTech/QuantumMusic/blob/main/startup_tasks.md): please read it and perform the assignments within.  Pay particular atytention to section 3.
+
 It is now time to move to initial assignments, and completing the onboading process.
 
 
 
 ---
+### 2025-02-14
 First assignments are to create a GitHub account which you can do [here](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github)
 
 Current Documentation for this project is listed below.  
