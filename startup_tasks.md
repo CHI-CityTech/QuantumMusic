@@ -44,7 +44,7 @@ The GitHub repository we will be using is [CHI-CityTech/QuantumMusic](https://gi
 🔹 **Action Steps:**
 1. **Join the Server:**
    - Many of you may already be a member, but if so please still perform the rest.  
-   - A link to join the Discord server will be provided in your email.
+   - The invite link for this server can be found [here](https://discord.gg/qKh9g5CE).  (expires 2025-02-27)  
 2. **Set Up Notifications:**  
    - Enable notifications for relevant channels to stay updated.
 3. **Introduce Yourself:**  
