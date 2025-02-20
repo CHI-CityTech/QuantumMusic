@@ -1,5 +1,11 @@
 # **Meeting Summary: Quantum Music Research Meeting (2025-02-14)**
 
+Present:
+David B Smith
+Oleg Berman
+Sunima Danzol
+Melissa Demollari
+
 ## **Quick Recap**
 Professors **Oleg Berman** and **David Smith** discussed the probabilistic nature of human creativity, particularly in **music composition**, and explored the potential of using **quantum computing** to generate new compositions. 
 
