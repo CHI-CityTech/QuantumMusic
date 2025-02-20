@@ -1,6 +1,8 @@
 ## **Setup Instructions for Students**
 
-Welcome to the **Quantum Music Generation** research project! Below are the required steps to get started. Each task ensures you have access to the necessary tools, platforms, and resources to collaborate effectively.
+Welcome to the **Quantum Music Generation** research project! Below are the required steps to get started. Each task ensures you have access to the necessary tools, platforms, and resources to collaborate effectively.  
+
+Before starting with the tasks below, please refresh yourselves with the overall [Spring 2025 proposal](https://github.com/CHI-CityTech/QuantumMusic/blob/main/Proposals/Quantum_Music_Proposal_Spring_2025.md).  
 
 ---
 
@@ -97,14 +99,14 @@ The GitHub repository we will be using is [CHI-CityTech/QuantumMusic](https://gi
 
 🔹 **Action Steps:**
 1. **Attend the Kickoff Meeting:**  
-   - Date & Time: **[To Be Scheduled]**
-   - Location: **Zoom or Discord Voice Channel**
+   - Date & Time: **2025-02-21 7:00 pm**
+   - Location: **Zoom: 649-104-8253 passcode 'Advise'**
    - Agenda:
      - Project Overview & Goals
      - Student Roles & Expectations
      - Task Breakdown & First Assignments
-2. **Set Up a Regular Check-in Schedule:**  
-   - Decide on availability for weekly or biweekly meetings.
+2. **Confirm a Regular Check-in Schedule:**  
+   - Decide on availability for weekly or biweekly meetings.  Currently we are targetting Friday Evenings.
 
 ---
 
