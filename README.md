@@ -7,7 +7,7 @@ Repository for material involving the use of quantum computing to generate music
 ---
 ### 2025-02-20 Assignments
 
-[Startup tasks can be found at this document](https://github.com/CHI-CityTech/QuantumMusic/blob/main/startup_tasks.md): please read it and perform the assignments within.  Pay particular atytention to section 3.
+[Startup tasks can be found at this document](https://github.com/CHI-CityTech/QuantumMusic/blob/main/startup_tasks.md): please read it and perform the assignments within.  Pay particular atytention to section 2.
 
 It is now time to move to initial assignments, and completing the onboading process.
 
