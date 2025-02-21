@@ -17,7 +17,7 @@ It is now time to move to initial assignments, and completing the onboading proc
 ### 2025-02-14
 First assignments are to create a GitHub account which you can do [here](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github)
 
-Current Documentation for this project is listed below.  
+**Current Documentation for this project is listed below.**  
 
 [Spring 2025 Research Proposal](https://github.com/CHI-CityTech/QuantumMusic/blob/main/Proposals/Quantum_Music_Proposal_Spring_2025.md)  
 A more targeted proposal to encompass activity in Spring 2025.
