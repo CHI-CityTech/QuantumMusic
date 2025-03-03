@@ -14,9 +14,9 @@
  - Alyssa Burtsev  
  - Mellisa Demolari  
  - Elizabeth Frias  
- - Houke Gao  
  - Stefanie Rivera
  - Sunima Dangol
+ - (Houke Gao) 
 
 ## **1 Introduction**
 
