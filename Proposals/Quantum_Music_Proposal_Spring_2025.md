@@ -206,7 +206,7 @@ While individual students may assume specific primary roles, responsibilities ma
 #### **5.1.1Research and Framework Design (Weeks 1-2)**
 - **Objective:** Establish a theoretical foundation for quantum music processing.
 - **Activities:**
-  - Review literature on quantum computing, algorithmic composition, and TDA.
+  - Review literature on quantum computing, algorithmic composition, and Topological Data Analysis (TDA).
   - Define a simplified data pipeline tailored for semester goals.
   - Identify key parameters for encoding (e.g., pitch, rhythm).
 
