@@ -1,0 +1,58 @@
+name: "01 Task Issue"
+description: "Template for tracking individual project tasks."
+labels: [task, tracking]
+assignees: []
+body:
+  - type: input
+    id: assigned_task
+    attributes:
+      label: "Assigned Task"
+      description: "Briefly state the specific task assigned."
+    validations:
+      required: true
+
+  - type: textarea
+    id: task_description
+    attributes:
+      label: "Task Description"
+      description: "Provide a brief description of what this task entails."
+    validations:
+      required: true
+
+  - type: input
+    id: due_date
+    attributes:
+      label: "Due Date"
+      description: "Enter the due date for this task."
+
+  - type: input
+    id: time_spent
+    attributes:
+      label: "Time Spent"
+      description: "Enter the estimated or actual time spent on this task (e.g., 2 hours, 3 days)."
+
+  - type: textarea
+    id: task_deliverables
+    attributes:
+      label: "Task Deliverables"
+      description: "List the deliverables or outputs for this task. Provide links or other information"
+    validations:
+      required: true
+
+  - type: textarea
+    id: amount_accomplished
+    attributes:
+      label: "Amount Accomplished"
+      description: "Describe the current progress made on this task."
+
+  - type: textarea
+    id: challenges
+    attributes:
+      label: "Challenges & Notes"
+      description: "Describe any potential roadblocks or important considerations."
+
+  - type: textarea
+    id: review_feedback
+    attributes:
+      label: "Review & Feedback"
+      description: "Request feedback from at least one peer or instructor."
