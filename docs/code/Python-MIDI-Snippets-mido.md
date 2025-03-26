@@ -1,6 +1,20 @@
 # Python MIDI Snippets (Mido)
 
-This file contains Python code snippets using the `mido` library for working with MIDI files.
+This file contains Python code snippets using the `mido` library for working with MIDI files.  
+
+
+# Import the mido library for working with MIDI files
+import mido
+from mido import MidiFile, MidiTrack, Message
+
+Explanation:  
+mido is a lightweight and intuitive library for reading, writing, and manipulating MIDI files and messages.
+
+- MidiFile lets you load and inspect MIDI files.
+- MidiTrack handles individual tracks within a MIDI file.
+- Message is used to create and inspect MIDI messages.
+
+The **mido** library can be found [here](https://pypi.org/project/mido/).  
 
 ---
 
