@@ -23,7 +23,7 @@ Demonstrate that a simplified musical dataset can be:
 ## Methodology
 
 ### Step 1: Data Acquisition
-- Download MIDI files from reputable repositories (e.g., Kunst der Fuge, Classical Archives, MuseScore).
+- Download MIDI files from reputable repositories (e.g., [Kunst der Fuge](https://www.kunstderfuge.com/), [Classical Archives](https://www.classicalarchives.com/midi.html), [MIDIWorld](https://www.midiworld.com/mozart.htm).  
 - Use a MIDI parsing tool (e.g., `mido`, `music21`) to examine structure:
   - Number of tracks
   - Track separation by hand
