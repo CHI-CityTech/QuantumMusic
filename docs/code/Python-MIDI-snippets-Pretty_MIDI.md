@@ -3,6 +3,17 @@
 
 This file contains Python code snippets using the `pretty_midi` library for high-level MIDI analysis.
 
+**Explanation:**  
+pretty_midi is a higher-level library that abstracts away much of the MIDI message handling and focuses on musically meaningful constructs like notes, pitch, timing, and instruments. Ideal for tasks like extracting notes, tempo, or converting to piano rolls.  
+
+
+
+# Import the pretty_midi library for high-level musical analysis
+```python
+import pretty_midi  
+```
+
+
 The links to **pretty_midi** can be found [here](https://pypi.org/project/pretty_midi/).  
 
 ---
