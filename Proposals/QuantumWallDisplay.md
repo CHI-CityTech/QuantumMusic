@@ -1,9 +1,11 @@
 # Quantum Music Wall Display Proposal  
-**CHI Studio – Collaborative AI Display Area**
+**CHI Studio – Collaborative AI Display Area**  
 
 **Project Lead**: David B. Smith  
 **Research Assistant**: Elizabeth Frias  
 **Host**: Center for Holistic Integration (CHI)  
+
+**Anticipated Hours**: ~13 hours (tentative)
 
 ---
 
@@ -103,12 +105,13 @@ This display embodies the CHI ethos of interdisciplinary exploration, system int
 
 | Task                        | Description                                                                 | Lead             | Est. Time |
 |-----------------------------|-----------------------------------------------------------------------------|------------------|-----------|
-| **1. Visual Planning**      | Determine layout of wall panels and flow                                    | David & Elizabeth | 1 hr      |
-| **2. File Collation**       | Gather all assets (PDFs, images, snippets) into a shared folder             | Elizabeth         | 1 hr      |
-| **3. Panel Formatting**     | Format panels using Canva, Google Slides, or Illustrator                    | Elizabeth         | 3 hrs     |
-| **4. QR Code Generation**   | Generate scannable QR codes and label them for each resource                | Elizabeth         | 1 hr      |
-| **5. Printing Prep**        | Export posters to PDF, prepare for large-scale printing                     | Elizabeth         | 1.5 hrs   |
-| **6. Wall Assembly**        | Mount posters, position QR codes, label "work in progress" signage          | Team              | 1–2 hrs   |
+| **1. Collation & Review**   | Review and gather pre-existing materials                                   | Elizabeth         | 2 hrs     |
+| **2. Arrangement & Layout** | Light formatting, resizing, arranging for wall layout                      | Elizabeth         | 2.5 hrs   |
+| **3. Writing Captions**     | Draft 1–3 sentence explanatory texts for each poster item                  | Elizabeth         | 2 hrs     |
+| **4. QR Code Generation**   | Create scannable QR codes and test links                                   | Elizabeth         | 1 hr      |
+| **5. Printing Prep**        | Export formatted items for print                                           | Elizabeth         | 1.5 hrs   |
+| **6. Wall Assembly**        | Mount pages on butcher paper, label, adjust layout                         | Team              | 2 hrs     |
+| **7. Genesis Document**     | Write background on project origins                                        | Elizabeth         | 2 hrs     |
 
 ---
 
