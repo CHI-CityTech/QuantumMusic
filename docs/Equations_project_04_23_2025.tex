@@ -1,0 +1,447 @@
+\documentclass[preprintnumbers,amsmath,amssymb]{revtex4}
+%\documentclass[twocolumn,showpacs,preprintnumbers]{revtex4}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2960}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{LastRevised=Thursday, August 09, 2018 19:51:30}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{Language=American English}
+
+\flushbottom \footnotesep = 0pt
+\def\topfraction{1}
+\def\bottomfraction{1}
+\def\textfraction{0.05}
+\def\floatpagefraction{0.95}
+\def\no{\noindent}
+\def\bc{\begin{center}}
+\def\ec{\end{center}}
+\def\vs{\vskip0.5cm}
+\def\beq{\begin{equation}}
+\def\eeq{\end{equation}}
+\def\cl{\centerline}
+\def\d{\downarrow}
+\def\u{\uparrow}
+\def\doub{\downarrow\uparrow}
+\def\bj{{\bf j}}
+\def\bl{{\bf k}}
+\def\br{{\bf r}}
+\def\bq{{\bf q}}
+\def\bk{{\bf k}}
+\textfloatsep = 0.5cm \floatsep = 0.0cm \setcounter{topnumber}{2}
+\setcounter{bottomnumber}{2}
+
+\begin{document}
+\title{Model Equations for the music project}
+
+\author{}
+
+
+
+
+
+
+
+
+ \maketitle
+
+\section{Model Equations}
+
+
+We study $N$ musical compositions ($i = 1,2, \ldots, N$) at the time
+intervals for each musical composition $t$: $0  \leq t_{ij} \leq
+T_{i}$.
+
+Then we divide the maximal time interval with the maximal $T_{i}$
+into $M$ small parts.
+
+Then we have the time steps for each musical composition $i$: $(0,
+t_{i1})$, $(t_{i1}, t_{i2})$, \ldots,  $(t_{i(M-1)}, t_{iM})$.  We emphasize that $t_{iM} = T_{i}$.
+
+We represent each $i$th musical composition as a trajectory is the
+three-dimensional space $\overrightarrow{r}_{i} = \overrightarrow{r}_{i}(t)$, which can be represented as $x_{i} =
+x_{i}(t)$, $y_{i} = y_{i}(t)$, $z_{i} = z_{i}(t)$. We assume $\overrightarrow{r}_{i}(t) = (x_{i}(t), y_{i}(t),
+z_{i}(t))$.
+
+We assume that we have $L$ characteristic properties of musical composition: $C_{l}$; where $l =
+1, \ldots, L$.
+
+In this case, each $j$th point in the $i$th trajectory, corresponding to the $i$th
+musical composition, can be represented as
+\begin{eqnarray}
+\label{traj} x_{i}(t_{ij}) = \sum_{l = 1}^{L} p_{ilx}(t_{ij}) C_{l}; \hspace{2cm} y_{i}(t) = \sum_{l = 1}^{L} p_{ily}(t_{ij}) C_{l};
+ \hspace{2cm} z_{i}(t) = \sum_{l = 1}^{L} p_{ilz}(t_{ij}) C_{l} ,
+\end{eqnarray}
+where $j = 1,2, \ldots, M$. The coefficients $0 \leq p_{ilx}(t_{ij}) \leq 1$, $0 \leq p_{ily}(t_{ij}) \leq 1$, $0 \leq p_{ilz}(t_{ij}) \leq 1$ represent
+the relative contribution of the characteristic property $C_{l}$ into the components $x$, $y$, and $z$ correspondingly for the musical composition $i$ during the time intervals
+$(t_{i(j-1)}, t_{ij})$. The coefficients $0 \leq p_{ilx}(t_{ij}) \leq 1$, $0 \leq p_{ily}(t_{ij}) \leq 1$, $0 \leq p_{ilz}(t_{ij}) \leq 1$ have to be defined
+from the known $N$ compositions.
+
+In this case we generate the new generated musical composition $R$, represented by the following trajectory:
+\begin{eqnarray}
+\label{traj1} x_{R}(t_{j}) = \sum_{l = 1}^{L} P_{Rlx}(t_{Rj}) C_{l}; \hspace{2cm} y_{R}(t) = \sum_{l = 1}^{L} P_{Rjy}(t_{Rj}) C_{l};
+ \hspace{2cm} z_{R}(t) = \sum_{l = 1}^{L} P_{Rlz}(t_{Rj}) C_{l} ,
+\end{eqnarray}
+where   $P_{Rlx}(t_{Rj})$, $P_{Rly}(t_{Rj})$, $P_{Rlz}(t_{Rj})$  are the expectations of the coefficients
+$p_{ilx}(t_{ij})$, $p_{ily}(t_{ij})$, $p_{ilz}(t_{ij})$ for each characteristic property $C_{l}$ during the time interval $(t_{R(j-1)}, t_{Rj})$,
+for $x$, $y$, and $z$ components of the trajectory for the new generated musical composition $R$.
+The expectations $P_{Rlx}(t_{Rj})$, $P_{Rly}(t_{Rj})$, $P_{Rlz}(t_{Rj})$ are given by
+\begin{eqnarray}
+\label{prob} P_{Rlx}(t_{Rj}) = \frac{\sum_{i = 1}^{N}  p_{ilx}(t_{ij})}{N}; \hspace{2cm}
+P_{Rly}(t_{Rj}) = \frac{\sum_{i = 1}^{N}  p_{ily}(t_{ij})}{N}; \hspace{2cm}
+P_{Rlz}(t_{Rj}) = \frac{\sum_{i = 1}^{N}  p_{ilz}(t_{ij})}{N} .
+\end{eqnarray}
+
+We can use the quantum computer in order to generate new musical compositions, represented by new random trajectories in the three-dimensional ($x$, $y$, $z$) space,
+by defining the new trajectories by random processes using Eq.~(\ref{traj1}) and assuming that $P_{Rlx}(t_{Rj})$, $P_{Rly}(t_{Rj})$, $P_{Rlz}(t_{Rj})$  are the probabilities that each characteristic property $C_{l}$ can be represented
+in the time interval $(t_{R(j-1)}, t_{Rj})$, for $x$, $y$, and $z$ components of the trajectory for the new generated musical composition $R$.
+
+
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Since the concept of quantum entanglement was introduced, quantum
+entanglement has been receiving more and more
+attention~\cite{Nielsen,Horodecki} Specifically in recent years,
+with the interdisciplinary development of quantum informatics, the
+general definition, physical properties and entanglement measurement
+of quantum entanglement have been comprehensively and deeply
+studied. Due to its nonlocality, quantum entanglement has been
+widely used in quantum information, especially in quantum computing
+and quantum communication~\cite{Zou}.
+
+Quantum entanglement, particularly with photons, is crucial for
+quantum communication, as it allows for secure communication and the
+sharing of quantum information.
+
+Entanglement is a fundamental quantum phenomenon where two or more
+particles become linked in such a way that they share the same fate,
+no matter how far apart they are. This linked state allows for the
+transfer of information and the creation of new quantum states.
+Photons, being light particles, are ideal for quantum communication
+because they can travel long distances and retain their quantum
+properties.
+
+Entangled photons can be used for quantum key distribution (QKD),
+which provides a secure way to share encryption keys. Entanglement
+enables the transfer of quantum information from one photon to
+another, even if they are far apart. Entangled photons are essential
+for building quantum networks, which can facilitate the transfer of
+quantum information between different quantum processors.
+
+In this Letter we provide an approach to monitor the entanglement of
+photons, which is based on a measurement protocol. We consider a
+photonic cavity with one and two two-level qubits inside. Then the
+cavity photons become entangled through their interaction with these
+qubits. The resulting entanglement is controlled by repeated
+projective measurements, which are periodically repeated with the
+time step $\tau$.
+
+We  study the quantum entanglement created between cavity photons
+coupled to one and two qubits applying a Jaynes-Cummings model. We
+employ the Hamiltonian used for the Jaynes-Cummings
+model~\cite{Jaynes,Knight} for one and two qubits, coupled to cavity
+photons.
+
+
+As a measure of quantum entanglement we use the R\'{e}nyi
+entanglement entropy, which  measures the quantum correlations
+between two subsystems under a spatial
+bipartition~\cite{Bombelli,Srednicki,Eisert,Miao}, which has been
+applied for detecting measurement-induced entanglement
+transitions~\cite{Li,Skinner,Lunt}. Recently, the R\'{e}nyi
+entanglement entropy has been efficiently measured in the
+experiment~\cite{vanEnk,Elben,Satzinger}.
+
+
+
+
+
+
+
+\begin{thebibliography}{99}
+
+\bibitem{Nielsen} M.~A. Nielsen and I.~L. Chuang,  {\it Quantum Computation and Quantum
+Information}, (Cambridge Univ. Press, 2000).
+
+\bibitem{Horodecki}  R. Horodecki, P. Horodecki, M. Horodecki, and K.
+Horodecki, \rmp {\bf 81}, 865 (2009).
+
+
+\bibitem{Zou} N. Zou, J. Phys.: Conf. Ser. {\bf 1827} 012120 (2021).
+
+
+\bibitem{Jaynes} E.~T. Jaynes and F.~W. Cummings, Proc. IEEE {\bf 51}, 89 (1963).
+
+\bibitem{Knight} B.~W. Shore and P.~L. Knight, J.~Mod.~Opt. {\bf 40}, 1195 (1993).
+
+\bibitem{Bombelli} L. Bombelli, R. K. Koul, J. Lee, and R. D. Sorkin, prd {\bf 34}, 373 (1986).
+
+\bibitem{Srednicki}  M. Srednicki, \prl {\bf 71}, 666 (1993).
+
+\bibitem{Eisert} J. Eisert, M. Cramer, and M. B. Plenio, \rmp {\bf 82}, 277
+(2010).
+
+\bibitem{Miao}  Q. Miao and T. Barthel, \prl {\bf 127}, 040603 (2021).
+
+
+\bibitem{Li}  Y. Li, X. Chen, and M. P. A. Fisher, \prb {\bf 100}, 134306
+(2019).
+
+\bibitem{Skinner} B. Skinner, J. Ruhman, and A. Nahum, Phys.~Rev.~X {\bf 9}, 031009
+(2019).
+
+\bibitem{Lunt} O. Lunt, M. Szyniszewski, and A. Pal, \prb {\bf 104},
+155111 (2021).
+
+\bibitem{vanEnk} S. J. van Enk and C. W. J. Beenakker, \prl {\bf 108},
+110503 (2012).
+
+\bibitem{Elben} A. Elben, B. Vermersch, M. Dalmonte, J. I. Cirac, and P.
+Zoller, \prl {\bf 120}, 050406 (2018).
+
+\bibitem{Satzinger} K. J. Satzinger et al., Science {\bf 374}, 1237 (2021).
+
+
+\end{thebibliography}
+
+\end{document}
+
+\section{A JC-like model for two qubits in a cavity}
+\label{sec3}
+
+
+Qubits form the basics for quantum computing, and quantum
+entanglement is the key resource present in quantum computing that
+makes it such a powerful tool. Under these conditions, we applied a
+Jaynes-Cummings-like model to study the quantum entanglement created
+between two qubits that are coupled to a single cavity mode.
+\medskip
+\par
+
+Let us consider a system consisting of two qubits interacting with a
+cavity mode with Hamiltonian
+
+\begin{equation}
+\hat{H}=\hat{H}_0+\hat{V^\prime}_{RWA}\label{hami}
+\end{equation}
+with  the unperturbed Hamiltonian $\hat{H}_0$  given by
+
+\begin{equation}
+\hat{H}_0=\hbar\left(\sum_{j=1}^2\omega_0\ket{e_j}\bra{e_j}+\omega_k\hat{a}^\dagger\hat{a}\right)\label{H0}
+\   ,
+\end{equation}
+where, in this notation,  $\ket{e_j}$ is  the excited state of qubit
+$j$, $\hbar\omega_0$ is the energy gap of the qubits, $\omega_k$ is
+the mode frequency and $\hat{a}^\dagger$ and $\hat{a}$ are the
+creation and annihilation operators for photons in the cavity. Here,
+we consider the excited state for the qubit, $\ket{e}$, to consist
+of a qubit in its first excited state, and $\ket{g}$ to consist of
+that same qubit in the ground state. Also, for simplicity, in Eq.\
+(\ref{H0}), we relabel the qubit energies so that the energy of a
+qubit in the ground state is set equal to 0. The energy gap
+$\hbar\omega_0$ is equal to $\hbar\omega_0 =
+E^\prime_{0,1}-E^\prime_{0,0}$. Therefore, the eigenstates of
+$\hat{H_0}$ are $\ket{n;ij}$, having energy $E_{nij}$ given by
+
+\begin{equation}
+E_{nij} = \hbar [\omega_0(i + j) + n\omega_k]
+\end{equation}
+where $i = 1$ ($j = 1$) if the first (second) qubit is in the
+excited state $\ket{e}$ and $i = 0$ ($j = 0$) if the first (second)
+qubit is in the ground state $\ket{g}$.
+
+\medskip
+\par
+
+The interaction Hamiltonian on the rotating wave approximation
+(RWA), $\hat{V^\prime}_{RWA}$ is given by
+
+
+\begin{equation}
+\hat{V^\prime}_{RWA} =
+\hbar\lambda\sum_{j=1}^2\left(\hat{\sigma}_j^+\hat{a}+\hat{\sigma}_j^-\hat{a}^\dagger\right)
+\end{equation}
+where $\hat{\sigma}_j^\pm$ are the creation (+) and annihilation (-)
+operators for the qubit $j$ and $\lambda$ is the qubit-photon
+coupling constant.
+
+\medskip
+\par
+
+
+This Hamiltonian is similar to that for     the Jaynes-Cummings
+model, except that it is for two qubits in one cavity mode. Since
+the qubits interact with the mode according to the RWA, the
+destruction (creation) of photons is determined by the creation
+(annihilation) of qubit excitations. Therefore,  as for the
+Jaynes-Cummings model, we can treat each manifold with fixed number
+of excitations, meaning the sum of the number of photons and the
+number of qubit excitations, individually. The $n$-th manifold is
+composed of the states with $n$ total excitations, namely
+$\ket{n;00}\equiv\ket{0_n}$, which is the state with $n$ cavity
+photons and no qubit excitations; $\ket{n-1;01}\equiv\ket{1_n}$, the
+state with $n-1$ cavity photons and with  qubit ``1" in the excited
+state $\ket{e}$; $\ket{n-1;10}\equiv\ket{2_n}$,  the state with
+$n-1$ cavity photons and with the qubit ``2" in the excited state
+$\ket{e}$ and $\ket{n-2;11}\equiv \ket{3_n}$, the state with $n-2$
+total excitations and both qubits in the excited state. It is
+important to note that each manifold is 4-dimensional with exception
+to the $n=1$, which is 3-dimensional and to the $n=0$ which is
+composed only with  the ground  state, $\ket{0;00}$. The effective
+Hamiltonian, $\hat{H}_n$, on the $n$-th manifold appears directly
+from Eq.\ (\ref{hami}) and is equal to
+
+\begin{equation}
+H_1 = \hbar \begin{pmatrix}
+\omega_k &\lambda&\lambda\\
+\lambda & \omega_0 &0 \\
+\lambda & 0 & \omega_0
+\end{pmatrix},\label{H1}
+\end{equation}
+for $n=1$ and
+
+\begin{equation}
+H_n = \hbar \begin{pmatrix}
+n\omega_k &\lambda\sqrt{n}&\lambda\sqrt{n}& 0\\
+\lambda\sqrt{n} & (n-1)\omega_k+\omega_0 &0 & \lambda\sqrt{n-1}\\
+\lambda\sqrt{n} & 0 & (n-1)\omega_k+\omega_0 &\lambda\sqrt{n-1} \\
+0 & \lambda\sqrt{n-1}& \lambda\sqrt{n-1}&(n-2)\omega_k+2\omega_0
+\end{pmatrix},\label{Hn}
+\end{equation}
+when $n=2,3,\cdots$. For the ground state, $H\ket{0;00}=0$. One can
+find in a straightforward way the energy eigenstates for the
+Hamiltonian in (\ref{H1}). The eigenvalues of (\ref{H1}) are
+
+\begin{eqnarray}
+\epsilon_0 &=& \omega_0\label{l11}
+\nonumber\\
+\epsilon_\pm &=&
+\dfrac{1}{2}\left((\omega_0+\omega_k)\pm\sqrt{(\omega_0-\omega_k)^2+{8\lambda^2}}\right),\label{l12}
+\end{eqnarray}
+with eigenvectors
+
+\begin{eqnarray}
+\ket{\psi_0} &=&
+\dfrac{1}{\sqrt{2}}\left(\ket{0;01}-\ket{0;10}\right)\label{vec11}
+\nonumber\\
+\ket{\psi_\pm} &=&
+\dfrac{1}{\sqrt{2+a_\pm^2}}\left(a_\pm\ket{1;00}-\ket{0;01}-\ket{0;10}\right),\label{vect12}
+\end{eqnarray}
+where $a_\pm$ is given by
+
+\begin{equation}
+a_\pm =
+\dfrac{1}{2\lambda}\left[(\omega_0-\omega_k)\pm\sqrt{(\omega_0-\omega_k)^2+{8\lambda^2}}\right].\label{apm}
+\end{equation}
+
+
+\medskip
+\par
+
+The eigenvalues and eigenvectors of (\ref{Hn}), however, are much
+more difficult to obtain.   However, this problem is solved  when we
+consider the resonance case where the cavity frequency is the same
+as the qubit transition frequency, $\omega_0=\omega_k \equiv
+\omega$. In this case, Eqs.\ (\ref{H1}) and (\ref{Hn}) become
+
+
+\begin{eqnarray}
+H_1 &=& \hbar \begin{pmatrix}
+\omega &\lambda&\lambda\\
+\lambda & \omega &0 \\
+\lambda & 0 & \omega
+\end{pmatrix}\label{H1res}
+\\
+H_n &=& \hbar \begin{pmatrix}
+n\omega &\lambda\sqrt{n}&\lambda\sqrt{n}& 0\\
+\lambda\sqrt{n} & n\omega &0 & \lambda\sqrt{n-1}\\
+\lambda\sqrt{n} & 0 & n\omega &\lambda\sqrt{n-1} \\
+0 & \lambda\sqrt{n-1}& \lambda\sqrt{n-1}&n\omega
+\end{pmatrix}\label{Hnres}. \  .
+\end{eqnarray}
+The eigenvalues of (\ref{H1res}) are
+
+\begin{eqnarray}
+\epsilon_0 &=& \omega
+\nonumber\\
+\epsilon_\pm &=& \omega\pm \sqrt{2}\lambda,
+\end{eqnarray}
+with eigenvectors
+
+\begin{eqnarray}
+\ket{\psi_0} &=&
+\dfrac{1}{\sqrt{2}}\left(\ket{0;01}-\ket{0;10}\right)\label{eg11}
+\\
+\ket{\psi_\pm} &=&
+\dfrac{1}{2}\left(\pm\sqrt{2}\ket{1;00}-\ket{0;01}-\ket{0;10}\right)\label{eg12},
+\end{eqnarray}
+which are  simply Eqs.\ (\ref{l11}-\ref{vect12}) at resonance.
+
+
+\medskip
+\par
+
+
+
+The eigenvalues of Eq.\ (\ref{Hnres}) are given by
+
+\begin{eqnarray}
+{\epsilon_n}_0 &=& n\omega
+\\
+{\epsilon_n}_\pm &=& n\omega\pm\sqrt{2(2n-1)}\lambda  \  ,
+\end{eqnarray}
+where the first eigenvalue is doubly degenerate. The corresponding
+eigenvectors are as follows
+
+\begin{eqnarray}
+\ket{{\psi_n}_{0,1}} &=&
+\dfrac{1}{\sqrt{2}}(\ket{n-1;01}-\ket{n-1;10})\label{egn1}
+\\
+\ket{{\psi_n}_{0,2}}
+&=&\dfrac{1}{\sqrt{2n-1}}\left(\sqrt{n-1}\ket{n;00}-\sqrt{n}\ket{n-2;11}\right)\label{psi_2}
+\\
+\ket{{\psi_n}_\pm} &=&
+\dfrac{1}{\sqrt{8n-4}}\left[\sqrt{2n}\ket{n;00}+\sqrt{2(n-1)}\ket{n-2;11}\pm\sqrt{2n-1}\left(\ket{n-1;01}+\ket{n-1;10}\right)\right]\
+.
+%\nonumber
+\label{egnl}
+\end{eqnarray}
+Here,  $\ket{{\Psi_n}_{0,1}}$ and $\ket{{\Psi_n}_{0,2}}$ are the two
+degenerate eigenstates with eigenvalue $\epsilon_{n0}$ and
+$\ket{{\psi_n}_\pm}$ are the eigenstates corresponding to the
+eigenvalue $\epsilon\pm$.    It is interesting to note that the
+eigenvalues and eigenvectors of Eqs.\ (\ref{H1res}) and
+(\ref{Hnres}) do agree with each other for the case $n=1$,  with the
+exception of the eigenvector $\ket{{\psi_n}_{0,2}}$, which, for
+$n=1$, contains a vector that does not exist in reality,
+corresponding to a state with 1 photon, as can be readily seen from
+Eq.\ (\ref{psi_2}).
+
+\end{document}
