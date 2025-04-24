@@ -11,6 +11,7 @@
 
 - Coordinate with CHI to understand space and mounting needs for the display wall
 - Collect existing materials for the display from the shared resources folder:
+  - Generate a smaller version of the original poster.
   - Intro poster text and flow diagram (music → data → quantum → regeneration)
   - Musical parameters table (especially those used in the microstudy)
   - Key equations with annotated descriptions
@@ -30,13 +31,15 @@
 **Goal**: Make Zotero a fully functional research hub for the project.  
 **Estimated Time**: 5–6 hours
 
+[detailed assignment](https://github.com/CHI-CityTech/QuantumMusic/blob/main/Proposals/ZoteroCollationAndExpansion.md)
+
 - Upload additional documents not yet entered into Zotero
 - Ensure all items have:
   - Abstracts (summaries of key points)
   - Tags (keywords, e.g., “quantum”, “Mozart”, “AI”, “algorithmic music”)
   - Relevancy notes or annotations
 - Organize all materials into existing or new subcollections
-- Create a shared “Precedent Research Summary” note inside Zotero (linked from collection root)
+- Create a shared “Precedent Research Summary” note inside Zotero, and then export to GitHub documents (linked from collection root)
 
 ---
 
