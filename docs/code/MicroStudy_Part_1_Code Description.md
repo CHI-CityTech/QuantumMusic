@@ -1,4 +1,4 @@
-# Quantum Music Preprocessing Pipeline (Up to Equation 3)
+# Quantum Music Preprocessing Pipeline (Part 1)
 
 ## 1. Human Language Description
 
