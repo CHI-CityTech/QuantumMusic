@@ -1,0 +1,126 @@
+\documentclass[preprintnumbers,amsmath,amssymb]{revtex4}
+%\documentclass[twocolumn,showpacs,preprintnumbers]{revtex4}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2960}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{LastRevised=Thursday, August 09, 2018 19:51:30}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{Language=American English}
+
+\flushbottom \footnotesep = 0pt
+\def\topfraction{1}
+\def\bottomfraction{1}
+\def\textfraction{0.05}
+\def\floatpagefraction{0.95}
+\def\no{\noindent}
+\def\bc{\begin{center}}
+\def\ec{\end{center}}
+\def\vs{\vskip0.5cm}
+\def\beq{\begin{equation}}
+\def\eeq{\end{equation}}
+\def\cl{\centerline}
+\def\d{\downarrow}
+\def\u{\uparrow}
+\def\doub{\downarrow\uparrow}
+\def\bj{{\bf j}}
+\def\bl{{\bf k}}
+\def\br{{\bf r}}
+\def\bq{{\bf q}}
+\def\bk{{\bf k}}
+\textfloatsep = 0.5cm \floatsep = 0.0cm \setcounter{topnumber}{2}
+\setcounter{bottomnumber}{2}
+
+\begin{document}
+\title{Simplified Model Equations for the music project}
+
+\author{}
+
+
+
+
+
+
+
+
+ \maketitle
+
+\section{Simplified Model Equations}
+
+
+We study $N$ musical compositions ($i = 1,2, \ldots, N$) at the time
+intervals for each musical composition $t$: $0  \leq t_{ij} \leq
+T_{i}$.
+
+Then we divide the maximal time interval with the maximal $T_{i}$
+into $M$ small parts. For any musical composition $i$ we do not
+consider $t_{ij}$ at $j > M$.
+
+
+Then we have the time steps for each musical composition $i$: $(0,
+t_{1})$, $(t_{1}, t_{2})$, \ldots,  $(t_{(M-1)}, t_{M})$.  We
+emphasize that $t_{M} = T$.
+
+We represent each $i$th musical composition as a trajectory is the
+three-dimensional space $\vec{r}_{i} = \vec{r}_{i}(t)$, which can be
+represented as $x_{i} = x_{i}(t)$, $y_{i} = y_{i}(t)$, $z_{i} =
+z_{i}(t)$. We assume $\vec{r}_{i}(t) = (x_{i}(t), y_{i}(t),
+z_{i}(t))$.
+
+
+Then we calculate the expectations of $x$, $y$, and $z$ at the time
+step $t_{j}$ as
+\begin{eqnarray}
+\label{expect} \bar{x}_{j}(t_{j}) = \frac{1}{N} \sum_{i = 1}^{N}
+x_{i}(t_{ij}); \hspace{2cm} \bar{y}_{j}(t_{j}) = \frac{1}{N} \sum_{i
+= 1}^{N} y_{i}(t_{ij});
+ \hspace{2cm} \bar{z}_{j}(t_{j}) = \frac{1}{N} \sum_{i
+= 1}^{N} z_{i}(t_{ij}),
+\end{eqnarray}
+where $j = 1,2, \ldots, M$.
+
+We define the standard deviations $\sigma (x)$, $\sigma (y)$,and
+$\sigma (z)$ for $x$, $y$, and $z$, respectively,  at the time step
+$t_{j}$ as
+\begin{eqnarray}
+\label{sigma} && \sigma_{j} (x) = \frac{1}{\sqrt{N}} \left[ \sum_{i
+= 1}^{N} \left(x_{i}(t_{ij}) -  \bar{x}_{j}(t_{j})
+\right)^{2}\right]^{1/2} ; \hspace{0.5cm}
+ \sigma_{j} (y) = \frac{1}{\sqrt{N}} \left[ \sum_{i =
+1}^{N} \left(y_{i}(t_{ij}) -  \bar{y}_{j}(t_{j})
+\right)^{2}\right]^{1/2} ; \nonumber \\
+&& \sigma_{j} (z) = \frac{1}{\sqrt{N}} \left[ \sum_{i = 1}^{N}
+\left(z_{i}(t_{ij}) -  \bar{z}_{j}(t_{j}) \right)^{2}\right]^{1/2} ,
+\end{eqnarray}
+where $j = 1,2, \ldots, M$.
+
+
+We can use the quantum computer in order to generate new musical
+compositions, represented by new random trajectories in the
+three-dimensional ($x$, $y$, $z$) space, by defining the new
+trajectories by random processes using the normal (Gaussian)
+distribution at the time step $t_{j}$ with the probability density
+function for $x$, $y$, and $z$, respectively, defined as
+\begin{eqnarray}
+\label{f} && f(x_{j}) =  \frac{1}{\sqrt{2\pi \sigma_{j}^{2}(x)}}
+\exp\left[-\frac{\left(x_{j}(t_{j}) - \bar{x}_{j}(t_{j})
+\right)^{2}}{2\sigma_{j}^{2}(x)}\right] ; \hspace{0.5cm} f(y_{j}) =
+\frac{1}{\sqrt{2\pi \sigma_{j}^{2}(y)}}
+\exp\left[-\frac{\left(y_{j}(t_{j}) -  \bar{y}_{j}(t_{j})
+\right)^{2}}{2\sigma_{j}^{2}(y)}\right] ; \nonumber \\
+&& f(z_{j}) = \frac{1}{\sqrt{2\pi \sigma_{j}^{2}(z)}}
+\exp\left[-\frac{\left(z_{j}(t_{j}) -
+\bar{z}_{j}(t_{j})\right)^{2}}{2\sigma_{j}^{2}(z)}\right] ,
+\end{eqnarray}
+where $j = 1,2, \ldots, M$.
+
+In this theory we applied the central limit theorem, which states
+that under certain (fairly common) conditions, the sum of many
+random variables will have an approximately normal distribution.
+
+\end{document}
